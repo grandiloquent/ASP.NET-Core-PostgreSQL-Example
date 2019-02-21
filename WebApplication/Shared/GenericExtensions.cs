@@ -11,6 +11,14 @@ namespace WebApplication.Shared
         {
             return strings.Concatenate((builder, nextValue) => builder.AppendLine(nextValue));
         }
+        public static string Concatenate(this IEnumerable<string> strings,char separator)
+        {
+            if (strings==null)
+            {
+                return String.Empty;
+            }
+            return strings.Concatenate((builder, nextValue) => builder.Append(nextValue).Append(separator));
+        }
 
         private static string Concatenate(this IEnumerable<string> strings,
             Func<StringBuilder, string, StringBuilder> builderFunc)

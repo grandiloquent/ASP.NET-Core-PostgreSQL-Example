@@ -1,0 +1,85 @@
+@model IEnumerable<WebApplication.Models.Video>
+@using WebApplication.Shared
+@{
+    ViewData["Title"] = "管理";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css"/>
+</head>
+<body class="bg-light">
+<div>
+    <div class="container-fluid">
+        <div class="row">
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>标题</th>
+                    <th>URL</th>
+                    <th>封面</th>
+                    <th>缩略图</th>
+                    <th>尺寸</th>
+                    <th>观看次数</th>
+                    <th>赞</th>
+                    <th>踩</th>
+                    <th>创建时间</th>
+                    <th>修改时间</th>
+                    <th>时长</th>
+                    <th>标签</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                @foreach (var m in Model)
+                {
+                    <tr>
+                        <td>@m.Id</td>
+                        <td>@m.Title</td>
+                        <td>@m.Url</td>
+                        <td>@m.Cover</td>
+                        <td>@m.Thumbnail</td>
+                        <td>@(@m.Width + "X" + m.Height)</td>
+                        <td>@m.WatchedCount</td>
+                        <td>@m.VoteUp</td>
+                        <td>@m.VoteDown</td>
+                        <td>@m.CreatedAt</td>
+                        <td>@m.UpdatedAt</td>
+                        <td>@m.Duration</td>
+
+                        <td>@m.Tags.Concatenate(';')</td>
+
+
+                        <td>
+                            <form asp-action="Delete" method="post">
+                                <a asp-action="Edit"
+                                   class="btn btn-sm btn-warning" asp-route-id="@m.Id">
+                                    编辑
+                                </a>
+                                <input type="hidden" name="id" value="@m.Id"/>
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    删除
+                                </button>
+                            </form>
+                        </td>
+
+
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+<script src="../bootstrap/jquery.js"></script>
+<script src="../bootstrap/bootstrap.js"></script>
+</body>
+</html>

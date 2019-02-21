@@ -31,6 +31,8 @@ namespace WebApplication.Migrations
 
                     b.Property<long>("Duration");
 
+                    b.Property<int>("Height");
+
                     b.Property<List<string>>("Tags");
 
                     b.Property<string>("Thumbnail");
@@ -46,6 +48,8 @@ namespace WebApplication.Migrations
                     b.Property<int>("VoteUp");
 
                     b.Property<int>("WatchedCount");
+
+                    b.Property<int>("Width");
 
                     b.HasKey("Id");
 

@@ -11,7 +11,7 @@ using WebApplication.Models;
 namespace WebApplication.Migrations
 {
     [DbContext(typeof(EfDatabaseContext))]
-    [Migration("20190221112614_Initial")]
+    [Migration("20190221134351_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,8 @@ namespace WebApplication.Migrations
 
                     b.Property<long>("Duration");
 
+                    b.Property<int>("Height");
+
                     b.Property<List<string>>("Tags");
 
                     b.Property<string>("Thumbnail");
@@ -48,6 +50,8 @@ namespace WebApplication.Migrations
                     b.Property<int>("VoteUp");
 
                     b.Property<int>("WatchedCount");
+
+                    b.Property<int>("Width");
 
                     b.HasKey("Id");
 

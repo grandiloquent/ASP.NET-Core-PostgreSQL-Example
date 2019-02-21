@@ -25,7 +25,9 @@ namespace WebApplication.Migrations
                     CreatedAt = table.Column<DateTime>(nullable: false),
                     UpdatedAt = table.Column<DateTime>(nullable: false),
                     Duration = table.Column<long>(nullable: false),
-                    Tags = table.Column<List<string>>(nullable: true)
+                    Tags = table.Column<List<string>>(nullable: true),
+                    Width = table.Column<int>(nullable: false),
+                    Height = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

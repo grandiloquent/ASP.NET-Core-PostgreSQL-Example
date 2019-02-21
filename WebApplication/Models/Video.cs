@@ -23,20 +23,26 @@ namespace WebApplication.Models
         [BindProperty(BinderType = typeof(SplitModelBinder))]
         public List<string> Tags { get; set; }
 
+        public int Width { get; set; }
+        public int Height { get; set; }
+
         public override string ToString()
         {
-            return "\nId = " + Id +
-                   "\nTitle = " + Title +
-                   "\nCover = " + Cover +
-                   "\nUrl = " + Url +
-                   "\nThumbnail = " + Thumbnail +
-                   "\nWatchedCount = " + WatchedCount +
-                   "\nVoteUp = " + VoteUp +
-                   "\nVoteDown = " + VoteDown +
-                   "\nCreatedAt = " + CreatedAt +
-                   "\nUpdatedAt = " + UpdatedAt +
-                   "\nDuration = " + Duration +
-                   "\nTags = " + Tags.ConcatenateLines();
+            return
+                "\nId = " + Id +
+                "\nTitle = " + Title +
+                "\nCover = " + Cover +
+                "\nUrl = " + Url +
+                "\nThumbnail = " + Thumbnail +
+                "\nWatchedCount = " + WatchedCount +
+                "\nVoteUp = " + VoteUp +
+                "\nVoteDown = " + VoteDown +
+                "\nCreatedAt = " + CreatedAt +
+                "\nUpdatedAt = " + UpdatedAt +
+                "\nDuration = " + Duration +
+                "\nTags = " + Tags.ConcatenateLines() +
+                "\nWidth = " + Width +
+                "\nHeight = " + Height;
         }
     }
 }

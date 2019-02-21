@@ -12,12 +12,55 @@ namespace WebApplication.Models
             _context = ctx;
         }
 
-        public IQueryable<Video> Videos => _context.Videos;
+
+        public void Delete(long id)
+        {
+            _context.Videos.Remove(new Video {Id = id});
+            _context.SaveChanges();
+        }
+
+        public IEnumerable<Video> GetAllVideos()
+        {
+            return _context.Videos;
+        }
+
+        public void UpdateVideo(Video changed, Video original = null)
+        {
+            if (original == null)
+            {
+                original = _context.Videos.Find(changed.Id);
+            }
+            else
+            {
+                _context.Videos.Attach(original);
+            }
+            original.Id=changed.Id;
+            original.Title=changed.Title;
+            original.Cover=changed.Cover;
+            original.Url=changed.Url;
+            original.Thumbnail=changed.Thumbnail;
+            original.WatchedCount=changed.WatchedCount;
+            original.VoteUp=changed.VoteUp;
+            original.VoteDown=changed.VoteDown;
+            original.CreatedAt=changed.CreatedAt;
+            original.UpdatedAt=changed.UpdatedAt;
+            original.Duration=changed.Duration;
+            original.Tags=changed.Tags;
+            original.Width=changed.Width;
+            original.Height=changed.Height;
+
+            _context.SaveChanges();
+        }
 
         public int CreateVideo(Video video)
         {
-            _context.Add(new Video());
+            _context.Add(video);
             return _context.SaveChanges();
+        }
+
+        public Video GetVideo(long id)
+        {
+            return _context.Videos.Find(id);
         }
     }
 }

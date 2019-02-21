@@ -16,8 +16,8 @@
           <e p="HomeController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20190221112614_Initial.cs" t="Include" />
-          <e p="20190221112614_Initial.Designer.cs" t="Include" />
+          <e p="20190221134351_Initial.cs" t="Include" />
+          <e p="20190221134351_Initial.Designer.cs" t="Include" />
           <e p="EfDatabaseContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -52,6 +52,8 @@
             <e p="Create.cshtml.cs" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="Index.cshtml.cs" t="Include" />
+            <e p="Views.cshtml" t="Include" />
+            <e p="Views.cshtml.cs" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
