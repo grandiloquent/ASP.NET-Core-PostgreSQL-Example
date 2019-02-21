@@ -1,0 +1,19 @@
+@model WebApplication.Models.Video
+
+
+@using (@Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    if (ViewBag.CreateMode != null && !ViewBag.CreateMode)
+    {
+        <div class="mb-3">@Html.LabelFor(Model => Model.Id) @Html.TextBoxFor(Model => Model.Id, new {@class = "form-control"})</div>
+    }
+    <div class="mb-3">@Html.LabelFor(Model => Model.Title) @Html.TextBoxFor(Model => Model.Title, new {@class = "form-control"})</div>
+    <div class="mb-3">@Html.LabelFor(Model => Model.Url) @Html.TextBoxFor(Model => Model.Url, new {@class = "form-control"})</div>
+    <div class="mb-3">@Html.LabelFor(Model => Model.Cover) @Html.TextBoxFor(Model => Model.Cover, new {@class = "form-control"})</div>
+    <div class="mb-3">@Html.LabelFor(Model => Model.Thumbnail) @Html.TextBoxFor(Model => Model.Thumbnail, new {@class = "form-control"})</div>
+    <div class="mb-3">@Html.LabelFor(Model => Model.Duration) @Html.TextBoxFor(Model => Model.Duration, new {@class = "form-control"})</div>
+    <div class="mb-3">@Html.LabelFor(Model => Model.Tags) @Html.TextBoxFor(Model => Model.Tags, new {@class = "form-control"})</div>
+
+    <hr class="mb-4">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">提交</button>
+}

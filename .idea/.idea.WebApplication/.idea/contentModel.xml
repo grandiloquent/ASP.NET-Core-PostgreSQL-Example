@@ -9,20 +9,21 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Binders" t="Include">
+          <e p="SplitModelBinder.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
-          <e p="PsychoController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20190221105257_Initial.cs" t="Include" />
-          <e p="20190221105257_Initial.Designer.cs" t="Include" />
+          <e p="20190221112614_Initial.cs" t="Include" />
+          <e p="20190221112614_Initial.Designer.cs" t="Include" />
           <e p="EfDatabaseContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="EfDatabaseContext.cs" t="Include" />
           <e p="EFDataRepository.cs" t="Include" />
           <e p="IDataRepository.cs" t="Include" />
-          <e p="Psycho.cs" t="Include" />
           <e p="Video.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -36,6 +37,10 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Shared" t="Include">
+          <e p="GenericExtensions.cs" t="Include" />
+          <e p="StringExtensions.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
@@ -43,15 +48,14 @@
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="_ViewStart.cshtml.cs" t="Include" />
           <e p="Home" t="Include">
-            <e p="Index.cshtml" t="Include" />
-            <e p="Index.cshtml.cs" t="Include" />
-          </e>
-          <e p="psycho" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Create.cshtml.cs" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="Index.cshtml.cs" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
+            <e p="Editor.cshtml" t="Include" />
           </e>
         </e>
         <e p="WebApplication.csproj" t="IncludeRecursive" />
@@ -72,6 +76,11 @@
           <e p="actions.css" t="Include" />
           <e p="app.css" t="Include" />
           <e p="badge.css" t="Include" />
+          <e p="bootstrap" t="Include">
+            <e p="bootstrap.css" t="Include" />
+            <e p="bootstrap.js" t="Include" />
+            <e p="jquery.js" t="Include" />
+          </e>
           <e p="button.css" t="Include" />
           <e p="layout.css" t="Include" />
           <e p="list.css" t="Include" />

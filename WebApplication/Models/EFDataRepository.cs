@@ -5,13 +5,19 @@ namespace WebApplication.Models
 {
     public class EFDataRepository : IDataRepository
     {
-        private EfDatabaseContext context;
+        private readonly EfDatabaseContext _context;
 
         public EFDataRepository(EfDatabaseContext ctx)
         {
-            context = ctx;
+            _context = ctx;
         }
 
-        public IQueryable<Video> Videos => context.Videos;
+        public IQueryable<Video> Videos => _context.Videos;
+
+        public int CreateVideo(Video video)
+        {
+            _context.Add(new Video());
+            return _context.SaveChanges();
+        }
     }
 }

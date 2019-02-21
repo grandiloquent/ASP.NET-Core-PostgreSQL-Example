@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace WebApplication.Migrations
@@ -15,7 +17,15 @@ namespace WebApplication.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     Title = table.Column<string>(nullable: true),
                     Cover = table.Column<string>(nullable: true),
-                    Thumbnail = table.Column<string>(nullable: true)
+                    Url = table.Column<string>(nullable: true),
+                    Thumbnail = table.Column<string>(nullable: true),
+                    WatchedCount = table.Column<int>(nullable: false),
+                    VoteUp = table.Column<int>(nullable: false),
+                    VoteDown = table.Column<int>(nullable: false),
+                    CreatedAt = table.Column<DateTime>(nullable: false),
+                    UpdatedAt = table.Column<DateTime>(nullable: false),
+                    Duration = table.Column<long>(nullable: false),
+                    Tags = table.Column<List<string>>(nullable: true)
                 },
                 constraints: table =>
                 {

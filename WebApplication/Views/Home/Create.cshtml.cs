@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication.Views.Psycho
+namespace WebApplication.Views.Home
 {
-    public class Index : PageModel
+    public class Create : PageModel
     {
         public void OnGet()
         {

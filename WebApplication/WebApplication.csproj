@@ -13,7 +13,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="wwwroot\bootstrap" />
       <Folder Include="www\src" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Psycho\Index.cshtml" />
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,36 @@
+@page
+@model WebApplication.Models.Video
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css"/>
+</head>
+<body class="bg-light">
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">New Video</span>
+                </h4>
+
+                <partial name="~/Views/Shared/Editor.cshtml"/>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="../bootstrap/jquery.js"></script>
+<script src="../bootstrap/bootstrap.js"></script>
+</body>
+</html>
