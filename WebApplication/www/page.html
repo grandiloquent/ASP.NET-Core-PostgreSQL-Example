@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="toolbar.css">
+    <link rel="stylesheet" href="owner.css">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="badge.css">
+    <link rel="stylesheet" href="actions.css">
+
+</head>
+<body>
+
+<div id="player-container-id" class="player-container ">
+    <div id="player" class="player-api player-size" initial-load="" playable="true" loading="false">
+        <div class="html5-video-player unstarted-mode ytp-hide-controls ytp-hide-info-bar ytp-small-mode" tabindex="-1"
+             id="movie_player" data-version="/yts/jsbin/player-plasma-ias-phone-zh_CN-vflbRtfOc/base.js"
+             aria-label="YouTube 视频播放器">
+            <div class="html5-video-container" data-layer="0">
+                <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload"
+                       style="width: 375px; height: 211px; left: 0px; top: -211px;"></video>
+            </div>
+            <button class="ytp-unmute ytp-popup ytp-button ytp-unmute-animated ytp-unmute-shrink" data-layer="2"
+                    style="display: none;">
+                <div class="ytp-unmute-inner">
+                    <div class="ytp-unmute-icon">
+                        <div class="ytp-icon ytp-icon-volume-muted-dark"></div>
+                    </div>
+                    <div class="ytp-unmute-text">点按取消静音</div>
+                    <div class="ytp-unmute-box"></div>
+                </div>
+            </button>
+            <div class="ytp-cued-thumbnail-overlay" data-layer="4" style="">
+                <div class="ytp-cued-thumbnail-overlay-image"
+                     style="background-image: url(https://i.ytimg.com/vi_webp/_7Z-SXIFv1M/sddefault.webp);"></div>
+                <button class="ytp-large-play-button ytp-button" aria-label="播放">
+                    <div class="ytp-icon ytp-icon-large-play-button-hover"></div>
+                </button>
+                <div class="ytp-cued-thumbnail-overlay-duration">10:11</div>
+            </div>
+            <div class="ytp-spinner" data-layer="4" style="display: none;">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ytp-spinner-message" style="display: none;">如果稍后没有开始播放，请尝试重新启动设备。</div>
+            </div>
+            <div class="ytp-paid-content-overlay" aria-live="assertive" aria-atomic="true" data-layer="4">
+                <div class="ytp-button ytp-paid-content-overlay-text" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="app">
+
+    <div id="header-bar">
+        <header class="header-bar cbox" data-mode="watch">
+            <a class="header-bar-endpoint cbox" aria-label="首页" id="home-icon" href="/">
+                <c3-icon class="header-bar-logo" flip-for-rtl="false">
+                    <svg viewBox="0 0 68 68" preserveAspectRatio="xMidYMid meet">
+                        <path d="M66.5,7.7c-0.8-2.9-2.5-5.4-5.4-6.2C55.8,0.1,34,0,34,0S12.2,0.1,6.9,1.5C4,2.3,2.3,4.8,1.5,7.7C0.1,13,0,24,0,24s0.1,11,1.5,16.3c0.8,2.9,2.5,5.4,5.4,6.2C12.2,47.9,34,48,34,48s21.8-0.1,27.1-1.5c2.9-0.8,4.6-3.3,5.4-6.2C67.9,35,68,24,68,24S67.9,13,66.5,7.7z M27,34V14l18,10L27,34z"
+                              transform="translate(0, 10)"></path>
+                    </svg>
+                </c3-icon>
+            </a>
+            <div class="header-bar-content non-search-mode cbox">
+                <h1 class="title" aria-label="YouTube">YouTube</h1>
+                <div class="header-bar-buttons cbox">
+                    <button class="icon-button " aria-label="在 YouTube 中搜索" aria-haspopup="false">
+                        <c3-icon flip-for-rtl="false">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                            </svg>
+                        </c3-icon>
+                    </button>
+                    <ytm-top-menu>
+                        <ytm-menu>
+                            <button class="icon-button " aria-label="设置" aria-haspopup="true">
+                                <c3-icon flip-for-rtl="false">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                    </svg>
+                                </c3-icon>
+                            </button>
+                        </ytm-menu>
+                    </ytm-top-menu>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="page-container">
+        <div class="player-size"></div>
+
+        <div class="single-column-watch-next-results-renderer">
+            <ytm-companion-slot class="scwnr-content" data-content-type="result"></ytm-companion-slot>
+            <div class="item-section-renderer">
+                <lazy-list>
+                    <div class="slim-video-metadata-renderer">
+                        <div class="slim-video-metadata-header">
+                            <div class="slim-video-metadata-title-and-badges">
+                                <div class="standalone-badge-supported-renderer top-standalone-badge">
+                                    <div class="standalone-collection-badge-renderer">
+                                        <div class="badge standalone-collection-badge" data-type="STYLE_PLAIN">
+                                            <a href="/results?search_query=%23r%C3%A1pidos">#rápidos</a> <a
+                                                href="/results?search_query=%23trabalhadores">#trabalhadores</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="slim-video-metadata-title">OS TRABALHADORES MAIS RÁPIDOS DO MUNDO</h2>
+                            </div>
+                            <c3-icon class="" role="button" aria-label="展开" aria-expanded="false" flip-for-rtl="false">
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </c3-icon>
+                        </div>
+
+                        <!--actions-->
+                        <div class="slim-video-metadata-actions">
+
+                            <!---->
+                            <div class="material-button button-renderer compact " data-style="[object Object]"
+                                 data-icon-only="false" is-busy="false" aria-busy="false">
+                                <button class="material-button-button" aria-label="与另外 290,982 人一起顶此视频"
+                                        aria-pressed="false">
+                                    <div class="cbox">
+                                        <c3-icon class="button-renderer-icon" flip-for-rtl="false">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                            </svg>
+                                        </c3-icon>
+                                        <div class="button-renderer-text"><span aria-label="290,982 人顶过">29万</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!---->
+
+                            <div class="material-button button-renderer compact " data-style="[object Object]"
+                                 data-icon-only="false" is-busy="false" aria-busy="false">
+                                <button class="material-button-button" aria-label="与另外 63,225 人一起踩此视频"
+                                        aria-pressed="false">
+                                    <div class="cbox">
+                                        <c3-icon class="button-renderer-icon" flip-for-rtl="false">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                                <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                            </svg>
+                                        </c3-icon>
+                                        <div class="button-renderer-text"><span aria-label="63,225 人踩">6.3万</span></div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!---->
+
+                            <div class="material-button button-renderer compact " data-style="STYLE_DEFAULT"
+                                                data-icon-only="false" is-busy="false" aria-busy="false">
+                                <button class="material-button-button" aria-label="分享">
+                                    <div class="cbox">
+                                        <c3-icon class="button-renderer-icon" flip-for-rtl="false">
+                                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                                                <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
+                                            </svg>
+                                        </c3-icon>
+                                        <div class="button-renderer-text">分享</div>
+                                    </div>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <!--actions-->
+
+                        <!--Owner-->
+                        <div class="owner">
+                            <a class="owner-icon-and-title">
+                                <div class="profile-icon owner-profile-icon">
+                                    <img class="profile-icon-img"
+                                         src="https://yt3.ggpht.com/a-/AAuE7mBLk-4-jVVXpFwQfl3irUPlcGRF4sPZ-sUzKg=s48-mo-c-c0xffffffff-rj-k-no">
+                                </div>
+                                <div>
+                                    <h3>Descortinando</h3>
+                                    <div class="subhead">1000</div>
+                                </div>
+                            </a>
+                            <!---->
+                            <div class="owner-subscribe-button cbox">
+                                <div class="material-button button-renderer compact" data-style="STYLE_BRAND"
+                                     data-icon-only="false">
+                                    <button class="material-button-button">
+                                        <div class="cbox">
+                                            <c3-icon class="button-renderer-icon" flip-for-rtl="false">
+                                                <svg viewBox="0 0 68 68" preserveAspectRatio="xMidYMid meet">
+                                                    <path d="M66.5,7.7c-0.8-2.9-2.5-5.4-5.4-6.2C55.8,0.1,34,0,34,0S12.2,0.1,6.9,1.5C4,2.3,2.3,4.8,1.5,7.7C0.1,13,0,24,0,24s0.1,11,1.5,16.3c0.8,2.9,2.5,5.4,5.4,6.2C12.2,47.9,34,48,34,48s21.8-0.1,27.1-1.5c2.9-0.8,4.6-3.3,5.4-6.2C67.9,35,68,24,68,24S67.9,13,66.5,7.7z M27,34V14l18,10L27,34z"
+                                                          transform="translate(0, 10)"></path>
+                                                </svg>
+                                            </c3-icon>
+                                            <div class="button-renderer-text">订阅</div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Owner-->
+
+
+                    </div>
+                </lazy-list>
+            </div>
+
+            <!--List-->
+            <div class="item-section-renderer">
+                <div class="compact-media-item">
+                    <!---->
+                    <a class="compact-media-item-image">
+                        <div class="video-thumbnail-container-compact center">
+                            <div class="cover video-thumbnail-img video-thumbnail-bg">
+                                <img class="cover video-thumbnail-img" src="src/mqdefault.webp">
+                                <div class="video-thumbnail-overlay-bottom-group">
+                                    <div class="video-thumbnail-overlay-time-status-renderer">
+                                        <span aria-label="8分钟35秒钟">8:35</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <div class="compact-media-item-metadata" data-has-badges="true">
+                        <a class="compact-media-item-metadata-content">
+                            <h4 class="compact-media-item-headline">Gordon Ramsay Prepares & Cooks His Vietnamese Menu
+                                For Locals | Gordon's Great Escape</h4>
+                            <div class="subhead" aria-hidden="false">
+                                <div class="compact-media-item-byline small-text">Gordon Ramsay</div>
+                                <div class="compact-media-item-stats small-text">178万 次观看</div>
+                            </div>
+                            <div class="badge-supported-renderer">
+                                <div class="metadata-badge-renderer">
+                                    <div class="badge">最新</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--List-->
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.slim-video-metadata-actions {
+    padding: 0 12px 12px;
+    color: hsla(0, 0%, 6.7%, .6);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.slim-video-metadata-actions .material-button {
+    font-size: 1.2rem;
+    text-transform: none;
+    min-width: 0;
+    overflow: hidden;
+    -ms-flex-align: start;
+    -moz-box-align: start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.slim-video-metadata-actions:not(.slim-video-metadata-limited-state) .material-button {
+    -ms-flex: 1 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+}
+
+.slim-video-metadata-actions:not(.slim-video-metadata-limited-state) button > .cbox {
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.slim-video-metadata-actions .button-renderer-text {
+    margin-top: 7px;
+}

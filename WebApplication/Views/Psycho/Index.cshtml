@@ -1,0 +1,38 @@
+@section link
+{
+    <link rel="stylesheet" href="login.css">
+}
+
+@model WebApplication.Models.Psycho
+<div class="page-container login-layout">
+    <div class="vbox">
+        <h3>登录</h3>
+        @Html.ValidationSummary(true)
+        @using (Html.BeginForm("Index", "Psycho", FormMethod.Post, new
+        {
+            @class = "form login"
+        }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.Name)
+                @Html.TextBoxFor(Model => Model.Name, new
+                {
+                    @class = "form-control",
+                    @placeholder = "请输入用户名"
+                })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.Password)
+                @Html.PasswordFor(Model => Model.Password, new
+                {
+                    @class = "form-control",
+                    @placeholder = "请输入密码"
+                })
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-block btn-login" value="登录"/>
+            </div>
+        }
+    </div>
+</div>

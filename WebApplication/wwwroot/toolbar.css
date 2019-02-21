@@ -1,0 +1,51 @@
+
+header {
+    height: 48px;
+}
+
+
+.header-bar {
+    padding: 0 8px;
+    color: #fff;
+    background-color: #e62117;
+}
+
+.header-bar[data-mode="watch"], .header-bar[data-mode="sponsorship"] {
+    background-color: #222;
+}
+
+.header-bar-content, .header-bar-endpoint, .mobile-topbar-header-content, .mobile-topbar-header-endpoint {
+    visibility: visible;
+}
+
+
+.header-bar-buttons, .header-bar-endpoint {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+
+.header-bar-logo {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.header-bar-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin-left: 12px;
+    min-width: 0;
+}.title {
+     -webkit-box-flex: 1;
+     -ms-flex-positive: 1;
+     -webkit-flex-grow: 1;
+     flex-grow: 1;
+     margin: 0;
+     font-size: 1.5rem;
+     font-weight: normal;
+ }

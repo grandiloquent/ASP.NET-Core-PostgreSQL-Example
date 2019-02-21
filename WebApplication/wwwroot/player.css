@@ -1,0 +1,209 @@
+
+.player-container {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    right: env(safe-area-inset-right);
+    left: 0;
+    left: env(safe-area-inset-left);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.player-container {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    right: env(safe-area-inset-right);
+    left: 0;
+    left: env(safe-area-inset-left);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.player-api {
+    background: #000;
+}
+
+
+.player-api {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.player-size {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.player-api {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#player {
+    color: #fff;
+    position: relative;
+    -moz-transition: background-color .3s ease-in-out, background-image .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out, background-image .3s ease-in-out;
+    transition: background-color .3s ease-in-out, background-image .3s ease-in-out;
+}
+
+#player {
+    width: 100%;
+}
+
+
+#player {
+    margin: 0;
+    top: 0;
+}
+
+
+.html5-video-player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    outline: 0;
+    font-family: "YouTube Noto", Roboto, Arial, Helvetica, sans-serif;
+    color: #eee;
+    text-align: left;
+    direction: ltr;
+    font-size: 11px;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    touch-action: manipulation;
+    -ms-high-contrast-adjust: none;
+}
+
+.html5-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.html5-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
+    background-color: #000;
+}
+
+.html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar-track {
+    background-color: #424242;
+}
+
+.html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border: 1px solid #424242;
+    border-radius: 5px;
+}
+
+.html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #424242;
+}
+
+.html5-video-container {
+    z-index: 10;
+    position: relative;
+}
+
+
+.html5-main-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+}
+
+.html5-video-player .video-click-tracking, .html5-video-player .video-stream {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.ytp-cued-thumbnail-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+    -webkit-transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+    transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+
+.unstarted-mode:not(.playing-mode) .ytp-cued-thumbnail-overlay:not([aria-hidden=true]), .ended-mode .ytp-cued-thumbnail-overlay:not([aria-hidden=true]) {
+    cursor: pointer;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.ytp-icon {
+    margin: 0 auto;
+}
+
+.ytp-icon-large-play-button-hover {
+    background: no-repeat url(./imgbin/player-cougar-2x-vflz5zRX6.png) -1034px -371px;
+    background-size: 1549px 475px;
+    width: 68px;
+    height: 48px;
+}

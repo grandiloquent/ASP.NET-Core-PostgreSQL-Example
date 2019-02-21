@@ -1,0 +1,128 @@
+c3-icon {
+    display: inline-block;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    stroke: none;
+}
+
+c3-icon > svg {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    text-transform: inherit;
+    color: inherit;
+    background: transparent;
+}
+
+.ytp-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    text-align: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    cursor: default;
+    line-height: inherit;
+}
+
+.ytp-button:focus, .ytp-button {
+    outline: 0;
+}
+
+.ytp-large-play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 68px;
+    height: 48px;
+    margin-left: -34px;
+    margin-top: -24px;
+    -moz-transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+    -webkit-transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+    transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+    z-index: 63;
+}
+
+.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
+    cursor: pointer;
+}
+
+.icon-button {
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.material-button {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    min-width: 5.14em;
+    margin: 0 .29em;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.material-button.compact {
+    margin: -0.7em -0.57em;
+}
+
+.material-button-button {
+    padding: .7em .57em;
+}
+
+.button-renderer {
+    position: relative;
+}
+
+.button-renderer[data-style="STYLE_BRAND"] {
+    color: #e62117;
+}
+
+.button-renderer[data-icon-only="false"] .button-renderer-icon {
+    margin: 0 8px;
+}
+
+.button-renderer-text {
+    -webkit-align-self: center;
+    align-self: center;
+    min-height: 1em;
+    line-height: 1em;
+}
+
+.material-button.compact + .material-button.compact {
+    margin-left: .7em;
+}
+.large-media-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}

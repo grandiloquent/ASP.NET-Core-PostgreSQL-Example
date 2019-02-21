@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\psycho\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\psycho\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_WebApplication.1925361881.00" t="ExcludeRecursive" />
+    <e p="C:\Users\psycho\RiderProjects\WebApplication" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="WebApplication" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+          <e p="PsychoController.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190221105257_Initial.cs" t="Include" />
+          <e p="20190221105257_Initial.Designer.cs" t="Include" />
+          <e p="EfDatabaseContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="EfDatabaseContext.cs" t="Include" />
+          <e p="EFDataRepository.cs" t="Include" />
+          <e p="IDataRepository.cs" t="Include" />
+          <e p="Psycho.cs" t="Include" />
+          <e p="Video.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="WebApplication.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewImports.cshtml.cs" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml.cs" t="Include" />
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Index.cshtml.cs" t="Include" />
+          </e>
+          <e p="psycho" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Index.cshtml.cs" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="WebApplication.csproj" t="IncludeRecursive" />
+        <e p="www" t="Include">
+          <e p="imgbin" t="Include">
+            <e p="player-cougar-2x-vflz5zRX6.png" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="page.html" t="Include" />
+          <e p="src" t="Include">
+            <e p="mobile-c3-light-2x-vfl1jZWhO.css" t="Include" />
+            <e p="mobile-polymer-player-ias-mweb-2x-vflHu7DiU.css" t="Include" />
+            <e p="mqdefault.webp" t="Include" />
+            <e p="sddefault.webp" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="actions.css" t="Include" />
+          <e p="app.css" t="Include" />
+          <e p="badge.css" t="Include" />
+          <e p="button.css" t="Include" />
+          <e p="layout.css" t="Include" />
+          <e p="list.css" t="Include" />
+          <e p="login.css" t="Include" />
+          <e p="owner.css" t="Include" />
+          <e p="player.css" t="Include" />
+          <e p="reset.css" t="Include" />
+          <e p="spinner.css" t="Include" />
+          <e p="toolbar.css" t="Include" />
+        </e>
+      </e>
+      <e p="WebApplication.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
