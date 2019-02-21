@@ -12,4 +12,6 @@
         dotnet ef migrations add Initial -v
         dotnet ef database update
 
+## 依赖项
+
 * [Npgsql](https://github.com/npgsql/npgsql)
