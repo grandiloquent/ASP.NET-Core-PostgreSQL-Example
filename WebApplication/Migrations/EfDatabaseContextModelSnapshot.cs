@@ -44,11 +44,15 @@ namespace WebApplication.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Album")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
                     b.Property<string>("Cover");
 
                     b.Property<DateTime>("CreatedAt");
 
-                    b.Property<long>("Duration");
+                    b.Property<string>("Duration");
 
                     b.Property<int>("Height");
 

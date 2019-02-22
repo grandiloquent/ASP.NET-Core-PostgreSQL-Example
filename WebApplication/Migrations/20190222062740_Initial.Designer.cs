@@ -11,8 +11,8 @@ using WebApplication.Models;
 namespace WebApplication.Migrations
 {
     [DbContext(typeof(EfDatabaseContext))]
-    [Migration("20190222041641_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20190222062740_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -46,11 +46,15 @@ namespace WebApplication.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Album")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
                     b.Property<string>("Cover");
 
                     b.Property<DateTime>("CreatedAt");
 
-                    b.Property<long>("Duration");
+                    b.Property<string>("Duration");
 
                     b.Property<int>("Height");
 

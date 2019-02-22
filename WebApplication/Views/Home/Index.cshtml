@@ -38,13 +38,13 @@
                         </div>
                         <!---->
                         <div class="large-media-item-info cbox">
-                            <a class="large-media-item-metadata" href="../views/?w=@m.Url">
+                            <a class="large-media-item-metadata" href="../video/index/@m.Id">
                                 <h3>@m.Title</h3>
                                 <div class="subhead" aria-hidden="true">
                                     <span
                                         class="text-info small-text">
                                         TVBS 優選頻道
-                                    </span><span class="text-info small-text">@m.WatchedCount.FormatWatchedTimes()</span>
+                                    </span><span class="text-info small-text">@(m.WatchedCount.FormatTimes() + "观看")</span>
                                     <span
                                         class="text-info small-text">
                                         @m.UpdatedAt.FormatTimeAgo()
@@ -60,3 +60,8 @@
         <!---->
     </div>
 </div>
+
+@section script
+{
+
+}

@@ -4,20 +4,20 @@ namespace WebApplication.Shared
 {
     public static class FormatterExtension
     {
-        public static string FormatWatchedTimes(this int count)
+        public static string FormatTimes(this int count)
         {
             if (count == 0)
             {
-                return "无人观看";
+                return "无人";
             }
             else if (count >= 1000)
             {
-                return $"{count / 1000d}次 千观看";
+                return $"{count / 1000d}千次 ";
             }
 
-            return $"{count}次 观看";
+            return $"{count}次 ";
         }
-
+        
         public static string FormatTimeAgo(this DateTime dateTime)
         {
             const int SECOND = 1;

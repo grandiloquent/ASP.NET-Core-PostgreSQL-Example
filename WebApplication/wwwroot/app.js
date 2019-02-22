@@ -9,7 +9,6 @@
 
     var App = function App() {
         this.initialize();
-        this.showModal();
     };
     App.prototype.initialize = function () {
         this.bindViews();
