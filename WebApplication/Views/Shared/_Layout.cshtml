@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../badge.css">
     <link rel="stylesheet" href="../actions.css">
     <link rel="stylesheet" href="../spinner.css">
+    <link rel="stylesheet" href="../modal.css"/>
     @RenderSection("link")
 </head>
 <body>
@@ -46,7 +47,7 @@
                     </button>
                     <ytm-top-menu>
                         <ytm-menu>
-                            <button class="icon-button " aria-label="设置" aria-haspopup="true">
+                            <button class="icon-button" id="menu" aria-label="设置" aria-haspopup="true">
                                 <c3-icon flip-for-rtl="false">
                                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
                                         <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
@@ -64,5 +65,6 @@
     <div class="spinner" hidden=""></div>
 </div>
 
+<script src="../../app.js"></script>
 </body>
 </html>

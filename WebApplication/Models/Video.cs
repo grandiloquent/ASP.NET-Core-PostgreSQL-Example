@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication.Binders;
 using WebApplication.Shared;
@@ -9,9 +10,9 @@ namespace WebApplication.Models
     public class Video
     {
         public long Id { get; set; }
-        public string Title { get; set; }
+        [Required] [StringLength(100)] public string Title { get; set; }
         public string Cover { get; set; }
-        public string Url { get; set; }
+        [Required] [StringLength(512)] public string Url { get; set; }
         public string Thumbnail { get; set; }
         public int WatchedCount { get; set; }
         public int VoteUp { get; set; }

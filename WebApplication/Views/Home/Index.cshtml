@@ -2,3 +2,61 @@
 {
 
 }
+
+@using WebApplication.Shared
+@model IEnumerable<WebApplication.Models.Video>
+<div class="page-container">
+    <div class="section-list-renderer">
+
+        <!---->
+        <div class="item-section-renderer">
+            @foreach (var m in Model)
+            {
+                <div class="large-media-item">
+                    <a>
+                        <div class="video-thumbnail-container-large center">
+                            <div class="cover video-thumbnail-img video-thumbnail-bg"></div>
+                            <img class="cover video-thumbnail-img" src="../videos/@m.Cover">
+                            <div class="video-thumbnail-overlay-bottom-group">
+                                <div class="video-thumbnail-overlay-time-status-renderer">
+                                    <span
+                                        aria-label="6分钟秒钟">
+                                        6:00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <div class="details">
+                        <div class="large-media-channel">
+                            <a>
+                                <div class="profile-icon large-media-icon">
+                                    <img class="profile-icon-img" src="../img/thumbnail/@m.Thumbnail">
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="large-media-item-info cbox">
+                            <a class="large-media-item-metadata" href="../views/?w=@m.Url">
+                                <h3>@m.Title</h3>
+                                <div class="subhead" aria-hidden="true">
+                                    <span
+                                        class="text-info small-text">
+                                        TVBS 優選頻道
+                                    </span><span class="text-info small-text">@m.WatchedCount.FormatWatchedTimes()</span>
+                                    <span
+                                        class="text-info small-text">
+                                        @m.UpdatedAt.FormatTimeAgo()
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <!---->
+    </div>
+</div>

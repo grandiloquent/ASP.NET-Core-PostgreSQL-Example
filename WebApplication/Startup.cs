@@ -41,6 +41,16 @@ namespace WebApplication
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseStatusCodePages();
+            /*app.Use(async (context, next) =>
+            {
+                await next();
+                if (context.Response.StatusCode == 404)
+                {
+                    context.Request.Path = "/Home"; 
+                    await next();
+                }
+            });*/
             app.UseStaticFiles();
         }
     }

@@ -11,6 +11,7 @@ namespace WebApplication.Models
         }
 
         public DbSet<Video> Videos { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
         
     }
 }

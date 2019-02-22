@@ -1,7 +1,7 @@
 @model WebApplication.Models.Video
 
 
-<form asp-action="@(ViewBag.CreateMode != null && ViewBag.CreateMode ? "Create" : "Edit")" method="post">
+<form asp-action="@(ViewBag.CreateMode == null || ViewBag.CreateMode ? "Create" : "Edit")" method="post">
     @if (ViewBag.CreateMode != null && !ViewBag.CreateMode)
     {
         <div class="mb-3">@Html.LabelFor(Model => Model.Id) @Html.TextBoxFor(Model => Model.Id, new {@class = "form-control"})</div>
@@ -15,7 +15,7 @@
     <div class="mb-3">@Html.LabelFor(Model => Model.Height) @Html.TextBoxFor(Model => Model.Height, new {@class = "form-control"})</div>
     <div class="mb-3">
         @Html.LabelFor(Model => Model.Tags)
-        <input asp-for="Tags" class="form-control" value="@string.Join(";", Model.Tags)"/>
+        <input asp-for="Tags" class="form-control" value="@(Model != null ? string.Join(";", Model.Tags) : "")"/>
     </div>
 
     <hr class="mb-4">

@@ -10,6 +10,7 @@ namespace WebApplication.Models
         IEnumerable<Video> GetAllVideos();
         int CreateVideo(Video video);
         Video GetVideo(long id);
-        void UpdateVideo(Video changed, Video original=null);
+        IEnumerable<Video> GetLastVideos(int limit = 10);
+        void UpdateVideo(Video changed, Video original = null);
     }
 }

@@ -1,0 +1,144 @@
+@model WebApplication.Models.Feedback
+
+@{
+    ViewData["Title"] = "反馈";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        .flex {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .flex-column {
+            -moz-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column
+        }
+
+        .center {
+            -ms-flex-pack: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .center-self {
+           
+            -webkit-align-self: center;
+            -o-align-self: center;
+            align-self: center
+        }
+
+        body { background-color: rgba(72, 72, 72, 0.4); }
+
+        .form-container {
+            width: calc(100vw / 2);
+            margin: 0 auto;
+        }
+
+        .feed-input {
+            color: #3c3c3c;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 0;
+            line-height: 22px;
+            background-color: #fbfbfb;
+            padding: 13px;
+            margin-bottom: 10px;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 3px solid rgba(0, 0, 0, 0);
+        }
+
+        .feed-btn {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            float: left;
+            width: 100%;
+            border: #fbfbfb solid 4px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            font-size: 24px;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            margin-top: -4px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="form-container flex flex-column">
+        <h1 class="center-self">反馈</h1>
+        @using (Html.BeginForm("Feedback", "Help", FormMethod.Post))
+        {
+            @Html.TextBoxFor(Model => Model.Name, new {@class = "feed-input", @placeholder = "名称"})
+            @Html.TextBoxFor(Model => Model.Email, new
+            {
+                @class = "feed-input",
+                @placeholder = "邮箱",
+                @type = "email"
+            })
+            <textarea asp-for="Content" class="feed-input"></textarea>
+            <input id="submit" type="submit" class="feed-btn" value="提交" required/>
+        }
+    </div>
+</div>
+@*<script>
+    var submitInput = document.getElementById('submit');
+
+    submitInput.addEventListener('click',
+        function() {
+            var nameInput = document.getElementById('name');
+            var emailInput = document.getElementById('email');
+            var contentTextarea = document.getElementById('content');
+          
+            if (!contentTextarea.value) {
+
+                return;
+            }
+            var obj = {
+                name: nameInput.value,
+                email: emailInput.value,
+                content: contentTextarea.value
+            };
+            console.log(obj);
+            fetch("/feedback",
+                {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/json; charset=utf-8",
+
+                    },
+                    body: obj
+                }).then(function(response) {
+                return response.text();
+            }).then(function(text) {
+
+            }).catch(function() {
+
+            });
+        });
+</script>*@
+</body>
+</html>

@@ -20,9 +20,9 @@ namespace WebApplication.Controllers
         public IActionResult Index()
         {
             ViewBag.Title = "首页";
-            ViewBag.Watch = true;
+            ViewBag.Watch = false;
             ViewBag.SiteName = "激励过";
-            return View();
+            return View(_repository.GetLastVideos());
         }
 
         public IActionResult Create()
@@ -40,9 +40,8 @@ namespace WebApplication.Controllers
         [HttpPost]
         public IActionResult Edit(Video video)
         {
-            _repository.UpdateVideo(video,null);
+            _repository.UpdateVideo(video, null);
             return RedirectToAction("Views");
-
         }
 
         public IActionResult Edit(long id)
@@ -64,8 +63,8 @@ namespace WebApplication.Controllers
                 return View(video);
             }
 
-            video.UpdatedAt = DateTime.Now;
-            video.CreatedAt = DateTime.Now;
+            video.UpdatedAt = DateTime.UtcNow;
+            video.CreatedAt = DateTime.UtcNow;
 
             var result = _repository.CreateVideo(video);
             return RedirectToAction("Views");

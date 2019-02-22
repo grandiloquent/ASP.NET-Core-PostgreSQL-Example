@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -24,6 +25,11 @@ namespace WebApplication.Models
             return _context.Videos;
         }
 
+        public IEnumerable<Video> GetLastVideos(int limit = 10)
+        {
+            return _context.Videos.OrderByDescending(i => i.UpdatedAt).Take(limit);
+        }
+
         public void UpdateVideo(Video changed, Video original = null)
         {
             if (original == null)
@@ -34,20 +40,20 @@ namespace WebApplication.Models
             {
                 _context.Videos.Attach(original);
             }
-            original.Id=changed.Id;
-            original.Title=changed.Title;
-            original.Cover=changed.Cover;
-            original.Url=changed.Url;
-            original.Thumbnail=changed.Thumbnail;
-            original.WatchedCount=changed.WatchedCount;
-            original.VoteUp=changed.VoteUp;
-            original.VoteDown=changed.VoteDown;
-            original.CreatedAt=changed.CreatedAt;
-            original.UpdatedAt=changed.UpdatedAt;
-            original.Duration=changed.Duration;
-            original.Tags=changed.Tags;
-            original.Width=changed.Width;
-            original.Height=changed.Height;
+
+            original.Id = changed.Id;
+            original.Title = changed.Title;
+            original.Cover = changed.Cover;
+            original.Url = changed.Url;
+            original.Thumbnail = changed.Thumbnail;
+            original.WatchedCount = changed.WatchedCount;
+            original.VoteUp = changed.VoteUp;
+            original.VoteDown = changed.VoteDown; 
+            original.UpdatedAt = DateTime.UtcNow;
+            original.Duration = changed.Duration;
+            original.Tags = changed.Tags;
+            original.Width = changed.Width;
+            original.Height = changed.Height;
 
             _context.SaveChanges();
         }
