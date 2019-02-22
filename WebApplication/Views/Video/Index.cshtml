@@ -1,5 +1,5 @@
 @section link
-{
+    {
 
 }
 
@@ -21,8 +21,7 @@
                                     <div class="badge standalone-collection-badge" data-type="STYLE_PLAIN">
                                         @foreach (var m in Model.Tags)
                                         {
-                                            <a
-                                                href="?search_query=@m">
+                                            <a href="?search_query=@m">
                                                 @m
                                             </a>
                                         }
@@ -100,7 +99,6 @@
 
                     </div>
                     <!--actions-->
-
                     <!--Owner-->
                     <div class="owner">
                         <a class="owner-icon-and-title" href="?album=@Model.Album">
@@ -139,8 +137,7 @@
                 <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload"
                        data-width="@(Model.Width)"
                        data-height="@(Model.Height)"
-                       style="left: 0px; top: -211px;">
-                </video>
+                       style="left: 0px; top: -211px;"></video>
             </div>
             <button class="ytp-unmute ytp-popup ytp-button ytp-unmute-animated ytp-unmute-shrink" data-layer="2"
                     style="display: none;">
@@ -182,7 +179,7 @@
 </div>
 
 @section script
-{
+    {
     <script src="~/video.js"></script>
 
 }

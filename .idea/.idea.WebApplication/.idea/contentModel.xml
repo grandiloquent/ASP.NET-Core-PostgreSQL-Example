@@ -20,9 +20,12 @@
         <e p="Migrations" t="Include">
           <e p="20190222062740_Initial.cs" t="Include" />
           <e p="20190222062740_Initial.Designer.cs" t="Include" />
+          <e p="20190222082052_Add_Album.cs" t="Include" />
+          <e p="20190222082052_Add_Album.Designer.cs" t="Include" />
           <e p="EfDatabaseContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="Album.cs" t="Include" />
           <e p="EfDatabaseContext.cs" t="Include" />
           <e p="EFDataRepository.cs" t="Include" />
           <e p="Feedback.cs" t="Include" />
