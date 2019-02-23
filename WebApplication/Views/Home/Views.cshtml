@@ -45,14 +45,13 @@
                         <td>@m.Url</td>
                         <td>@m.Cover</td>
                         <td>@m.Thumbnail</td>
-                        <td>@(@m.Width + "X" + m.Height)</td>
+                        <td>@(m.VideoDetail.Width + "x" + m.VideoDetail.Height)</td>
                         <td>@m.WatchedCount</td>
                         <td>@m.VoteUp</td>
                         <td>@m.VoteDown</td>
                         <td>@m.CreatedAt</td>
                         <td>@m.UpdatedAt</td>
-                        <td>@m.Duration</td>
-
+                        <td>@m.VideoDetail.Duration</td>
                         <td>@m.Tags.Concatenate(';')</td>
 
 

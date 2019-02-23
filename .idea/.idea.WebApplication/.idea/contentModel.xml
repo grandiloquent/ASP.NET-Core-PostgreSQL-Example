@@ -15,13 +15,12 @@
         <e p="Controllers" t="Include">
           <e p="HelpController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="ResultsController.cs" t="Include" />
           <e p="VideoController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20190222062740_Initial.cs" t="Include" />
-          <e p="20190222062740_Initial.Designer.cs" t="Include" />
-          <e p="20190222082052_Add_Album.cs" t="Include" />
-          <e p="20190222082052_Add_Album.Designer.cs" t="Include" />
+          <e p="20190222162456_Initial.cs" t="Include" />
+          <e p="20190222162456_Initial.Designer.cs" t="Include" />
           <e p="EfDatabaseContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -29,8 +28,10 @@
           <e p="EfDatabaseContext.cs" t="Include" />
           <e p="EFDataRepository.cs" t="Include" />
           <e p="Feedback.cs" t="Include" />
+          <e p="FeedbackDatabaseContext.cs" t="Include" />
           <e p="IDataRepository.cs" t="Include" />
           <e p="Video.cs" t="Include" />
+          <e p="VideoDetail.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -44,10 +45,12 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Shared" t="Include">
+          <e p="CoreExtensions.cs" t="Include" />
           <e p="FormatterExtension.cs" t="Include" />
           <e p="GenericExtensions.cs" t="Include" />
           <e p="StringExtensions.cs" t="Include" />
         </e>
+        <e p="sql.sql" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
@@ -70,7 +73,10 @@
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
-            <e p="Editor.cshtml" t="Include" />
+            <e p="Album.cshtml" t="Include" />
+            <e p="Album.cshtml.cs" t="Include" />
+            <e p="VideoDetail.cshtml" t="Include" />
+            <e p="VideoDetail.cshtml.cs" t="Include" />
           </e>
           <e p="Video" t="Include">
             <e p="Index.cshtml" t="Include" />
@@ -108,6 +114,8 @@
           <e p="imgbin" t="Include">
             <e p="player-cougar-2x-vflz5zRX6.png" t="Include" />
           </e>
+          <e p="jq.js" t="Include" />
+          <e p="jqLite.js" t="Include" />
           <e p="layout.css" t="Include" />
           <e p="list.css" t="Include" />
           <e p="login.css" t="Include" />

@@ -20,23 +20,21 @@ namespace WebApplication.Migrations
                 .HasAnnotation("ProductVersion", "2.2.2-servicing-10034")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            modelBuilder.Entity("WebApplication.Models.Feedback", b =>
+            modelBuilder.Entity("WebApplication.Models.Album", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Content")
-                        .IsRequired();
+                    b.Property<string>("Cover");
 
-                    b.Property<DateTime>("CreateAt");
-
-                    b.Property<string>("Email");
-
-                    b.Property<string>("Name");
+                    b.Property<string>("Title");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Feedbacks");
+                    b.HasIndex("Title")
+                        .IsUnique();
+
+                    b.ToTable("Albums");
                 });
 
             modelBuilder.Entity("WebApplication.Models.Video", b =>
@@ -44,17 +42,11 @@ namespace WebApplication.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Album")
-                        .IsRequired()
-                        .HasMaxLength(100);
+                    b.Property<long>("AlbumId");
 
                     b.Property<string>("Cover");
 
                     b.Property<DateTime>("CreatedAt");
-
-                    b.Property<string>("Duration");
-
-                    b.Property<int>("Height");
 
                     b.Property<List<string>>("Tags");
 
@@ -70,17 +62,50 @@ namespace WebApplication.Migrations
                         .IsRequired()
                         .HasMaxLength(512);
 
+                    b.Property<long>("VideoDetailId");
+
                     b.Property<int>("VoteDown");
 
                     b.Property<int>("VoteUp");
 
                     b.Property<int>("WatchedCount");
 
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlbumId");
+
+                    b.HasIndex("VideoDetailId");
+
+                    b.ToTable("Videos");
+                });
+
+            modelBuilder.Entity("WebApplication.Models.VideoDetail", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Duration");
+
+                    b.Property<int>("Height");
+
                     b.Property<int>("Width");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Videos");
+                    b.ToTable("VideoDetail");
+                });
+
+            modelBuilder.Entity("WebApplication.Models.Video", b =>
+                {
+                    b.HasOne("WebApplication.Models.Album", "Album")
+                        .WithMany("Videos")
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("WebApplication.Models.VideoDetail", "VideoDetail")
+                        .WithMany()
+                        .HasForeignKey("VideoDetailId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

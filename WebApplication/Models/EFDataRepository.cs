@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace WebApplication.Models
 {
@@ -16,18 +18,26 @@ namespace WebApplication.Models
 
         public void Delete(long id)
         {
-            _context.Videos.Remove(new Video {Id = id});
+            var video = GetVideo(id);
+
+            _context.Videos.Remove(video);
+
+            if (video.VideoDetail != null)
+            {
+                _context.Remove(video.VideoDetail);
+            }
+
             _context.SaveChanges();
         }
 
         public IEnumerable<Video> GetAllVideos()
         {
-            return _context.Videos;
+            return _context.Videos.Include(v => v.Album).Include(v => v.VideoDetail);
         }
 
         public IEnumerable<Video> GetLastVideos(int limit = 10)
         {
-            return _context.Videos.OrderByDescending(i => i.UpdatedAt).Take(limit);
+            return _context.Videos.Include(v => v.Album).OrderByDescending(i => i.UpdatedAt).Take(limit);
         }
 
         public void UpdateVideo(Video changed, Video original = null)
@@ -41,32 +51,46 @@ namespace WebApplication.Models
                 _context.Videos.Attach(original);
             }
 
-            original.Id = changed.Id;
             original.Title = changed.Title;
             original.Cover = changed.Cover;
             original.Url = changed.Url;
             original.Thumbnail = changed.Thumbnail;
             original.WatchedCount = changed.WatchedCount;
             original.VoteUp = changed.VoteUp;
-            original.VoteDown = changed.VoteDown; 
+            original.VoteDown = changed.VoteDown;
             original.UpdatedAt = DateTime.UtcNow;
-            original.Duration = changed.Duration;
             original.Tags = changed.Tags;
-            original.Width = changed.Width;
-            original.Height = changed.Height;
+
+            original.VideoDetail.Width = changed.VideoDetail.Width;
+            original.VideoDetail.Height = changed.VideoDetail.Height;
+            original.VideoDetail.Duration = changed.VideoDetail.Duration;
+
+            original.Album.Title = original.Album.Title;
+            original.Album.Cover = original.Album.Cover;
 
             _context.SaveChanges();
         }
 
         public int CreateVideo(Video video)
         {
-            _context.Add(video);
+            video.Id = 0;
+            Console.WriteLine(_context.Albums.Count());
+            var album = _context.Albums.FirstOrDefault(i => i.Title == video.Album.Title);
+            if (album != null)
+            {
+                video.AlbumId = album.Id;
+                video.Album = null;
+            }
+
+            _context.Videos.Add(video);
             return _context.SaveChanges();
         }
 
         public Video GetVideo(long id)
         {
-            return _context.Videos.Find(id);
+            return _context.Videos.Include(v => v.Album)
+                .Include(v => v.VideoDetail)
+                .First(v => v.Id == id);
         }
     }
 }

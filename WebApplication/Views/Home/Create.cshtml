@@ -1,7 +1,8 @@
-@page
 @model WebApplication.Models.Video
 
 @{
+
+    ViewData["Title"] = ViewBag.CreateMode ? "Create" : "Edit";
     Layout = null;
 }
 
@@ -9,36 +10,62 @@
 
 <html>
 <head>
-    <title></title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="../../bootstrap/bootstrap.css"/>
 </head>
 <body class="bg-light">
-<div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 order-md-1">
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-muted">
-                        @if (ViewBag.CreateMode != null && !ViewBag.CreateMode)
-                        {
-                            @("New Video")
-                        }
-                        else
-                        {
-                            @("Edit Video")
-                        }
-                    </span>
-                </h4>
+<div class="p-2">
 
-                <partial name="~/Views/Shared/Editor.cshtml"/>
+    @**@
 
+    <form action="@(ViewBag.CreateMode ? "/Home/Create" : "/Home/Edit")" method="post">
+        <input name="original.Id" value="@Model?.Id" type="hidden"/>
+        <input name="original.Title" value="@Model?.Title" type="hidden"/>
+        <input name="original.Url" value="@Model?.Url" type="hidden"/>
+        <input name="original.Cover" value="@Model?.Cover" type="hidden"/>
+        <input name="original.Thumbnail" value="@Model?.Thumbnail" type="hidden"/>
+        <input name="original.Tags" value="@Model?.Tags" type="hidden"/>
+        <div class="row m-1">
+            <div class="col-6">
+                <h5 class="bg-info text-center p-2 text-white">Video</h5>
+
+
+                <div class="form-group">
+                    <label asp-for="Title"></label> <input asp-for="Title" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Url"></label> <input asp-for="Url" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cover"></label> <input asp-for="Cover" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Thumbnail"></label> <input asp-for="Thumbnail" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tags"></label> <input asp-for="Tags" class="form-control"/>
+                </div>
             </div>
 
+            <div class="col-6">
+                <h5 class="bg-info text-center p-2 text-white">VideoDetail</h5>
+                @Html.Partial("VideoDetail", Model)
+                <h5 class="bg-info text-center p-2 text-white">Album</h5>
+                @Html.Partial("Album", Model)
+            </div>
         </div>
 
-    </div>
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Save</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+
+    </form>
+    @**@
 
 </div>
+
+
 <script src="../bootstrap/jquery.js"></script>
 <script src="../bootstrap/bootstrap.js"></script>
 </body>

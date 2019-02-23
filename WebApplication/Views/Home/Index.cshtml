@@ -8,12 +8,12 @@
 <div class="page-container">
     <div class="section-list-renderer">
 
-        <!---->
-        <div class="item-section-renderer">
-            @foreach (var m in Model)
-            {
+        @foreach (var m in Model)
+        {
+            <div class="item-section-renderer">
+
                 <div class="large-media-item">
-                    <a>
+                    <a href="../video/index/@m.Id">
                         <div class="video-thumbnail-container-large center">
                             <div class="cover video-thumbnail-img video-thumbnail-bg"></div>
                             <img class="cover video-thumbnail-img" src="../videos/@m.Cover">
@@ -32,7 +32,7 @@
                         <div class="large-media-channel">
                             <a>
                                 <div class="profile-icon large-media-icon">
-                                    <img class="profile-icon-img" src="../img/thumbnail/@m.Thumbnail">
+                                    <img class="profile-icon-img" src="~/img/profile/@m.Album.Cover">
                                 </div>
                             </a>
                         </div>
@@ -43,7 +43,7 @@
                                 <div class="subhead" aria-hidden="true">
                                     <span
                                         class="text-info small-text">
-                                        TVBS 優選頻道
+                                        @m.Album.Title
                                     </span><span class="text-info small-text">@(m.WatchedCount.FormatTimes() + "观看")</span>
                                     <span
                                         class="text-info small-text">
@@ -54,10 +54,9 @@
                         </div>
                     </div>
                 </div>
-            }
+            </div>
+        }
 
-        </div>
-        <!---->
     </div>
 </div>
 

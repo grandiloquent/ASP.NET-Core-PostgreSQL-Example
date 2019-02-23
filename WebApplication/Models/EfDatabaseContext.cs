@@ -1,3 +1,4 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication.Models
@@ -10,8 +11,16 @@ namespace WebApplication.Models
         {
         }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            Console.WriteLine("OnModelCreating");
+            modelBuilder.Entity<Album>()
+                .HasIndex(a => a.Title)
+                .IsUnique();
+        }
+
         public DbSet<Video> Videos { get; set; }
-        public DbSet<Feedback> Feedbacks { get; set; }
-        
+        public DbSet<Album> Albums { get; set; }
     }
 }

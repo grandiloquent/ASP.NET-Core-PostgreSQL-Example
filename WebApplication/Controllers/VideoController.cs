@@ -1,11 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
+namespace WebApplication.Controllers{using Microsoft.AspNetCore.Mvc;
 using WebApplication.Models;
-
-namespace WebApplication.Controllers
-{
-    public class VideoController : Controller
-    {
-        private readonly IDataRepository _repository;
+    public  class VideoController: Controller
+{private readonly IDataRepository _repository;
 
         public VideoController(IDataRepository repository)
         {
@@ -20,5 +16,4 @@ namespace WebApplication.Controllers
             ViewBag.Title = video.Title;
             return View(video);
         }
-    }
-}
+}}

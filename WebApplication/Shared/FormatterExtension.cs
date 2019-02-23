@@ -17,7 +17,7 @@ namespace WebApplication.Shared
 
             return $"{count}次 ";
         }
-        
+
         public static string FormatTimeAgo(this DateTime dateTime)
         {
             const int SECOND = 1;
@@ -28,37 +28,37 @@ namespace WebApplication.Shared
 
             var ts = new TimeSpan(DateTime.UtcNow.Ticks - dateTime.Ticks);
             var delta = Math.Abs(ts.TotalSeconds);
-             
+
             if (delta < 1 * MINUTE)
-                return ts.Seconds == 1 ? "one second ago" : ts.Seconds + " seconds ago";
+                return ts.Seconds == 1 ? "1 秒前" : ts.Seconds + " 秒前";
 
             if (delta < 2 * MINUTE)
-                return "a minute ago";
+                return "1 分钟前";
 
             if (delta < 45 * MINUTE)
-                return ts.Minutes + " minutes ago";
+                return ts.Minutes + " 分钟前";
 
             if (delta < 90 * MINUTE)
-                return "an hour ago";
+                return "1 小时前";
 
             if (delta < 24 * HOUR)
-                return ts.Hours + " hours ago";
+                return ts.Hours + " 小时前";
 
             if (delta < 48 * HOUR)
-                return "yesterday";
+                return "昨天";
 
             if (delta < 30 * DAY)
-                return ts.Days + " days ago";
+                return ts.Days + " 天前";
 
             if (delta < 12 * MONTH)
             {
                 var months = Convert.ToInt32(Math.Floor((double) ts.Days / 30));
-                return months <= 1 ? "one month ago" : months + " months ago";
+                return months <= 1 ? "1 个月前" : months + " 月前";
             }
             else
             {
                 var years = Convert.ToInt32(Math.Floor((double) ts.Days / 365));
-                return years <= 1 ? "one year ago" : years + " years ago";
+                return years <= 1 ? "1 年前" : years + " 年前";
             }
         }
     }
