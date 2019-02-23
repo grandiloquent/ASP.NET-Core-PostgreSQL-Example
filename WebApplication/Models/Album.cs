@@ -13,6 +13,6 @@ namespace WebApplication.Models
 
         public string Cover { get; set; }
         public string Title { get; set; }
-        public IEnumerable<Video> Videos { get; set; }
+        public ICollection<Video> Videos { get; set; }
     }
 }

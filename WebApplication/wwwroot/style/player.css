@@ -10,16 +10,6 @@
     z-index: 1;
 }
 
-.player-container {
-    position: absolute;
-    top: 48px;
-    right: 0;
-    right: env(safe-area-inset-right);
-    left: 0;
-    left: env(safe-area-inset-left);
-    overflow: hidden;
-    z-index: 1;
-}
 
 .player-api {
     background: #000;
@@ -206,4 +196,18 @@
     background-size: 1549px 475px;
     width: 68px;
     height: 48px;
+}
+
+.ytp-cued-thumbnail-overlay-duration {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    bottom: 8px;
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    height: 16px;
+    line-height: 16px;
+    padding: 0px 4px;
+    position: absolute;
+    right: 8px;
 }

@@ -1,0 +1,134 @@
+.button {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    color: inherit;
+    text-align: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    cursor: default;
+    line-height: inherit;
+}
+
+.popup {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 2px;
+    background: rgba(28, 28, 28, 0.9);
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px;
+    transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1) 0s;
+    user-select: none;
+}
+
+.unmute.popup {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 1001;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 127%;
+    font-weight: 500;
+    background: none;
+    padding: 12px;
+}
+
+.autohide .unmute, .hide-info-bar .unmute {
+    top: 0px;
+}
+
+.unmute-inner {
+    padding-left: 3px;
+    padding-right: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    text-shadow: none;
+}
+
+.unmute.popup.unmute-animated .unmute-inner {
+    position: relative;
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0px;
+}
+
+.icon {
+    margin: 0px auto;
+}
+
+.icon-volume-muted-dark {
+    background: url(../imgbin/player-cougar-2x-vflz5zRX6.png) -906px 0px / 1549px 475px no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+.unmute-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.unmute-animated .unmute-icon {
+    padding-left: 2px;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.unmute-text {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.unmute-animated .unmute-text {
+    position: relative;
+    z-index: 10;
+    padding-top: 1px;
+    padding-right: 10px;
+}
+
+.unmute-shrink .unmute-text {
+    opacity: 1;
+    animation: ytp-unmute-alpha-anim 0.25s cubic-bezier(0.4, 0, 1, 1) 5.4s 1 reverse forwards running;
+}
+
+.unmute-animated .unmute-box {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 2px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.unmute-shrink .unmute-box {
+    width: 100%;
+    animation: unmute-width-anim 0.5s cubic-bezier(0.4, 0, 1, 1) 5.5s 1 reverse forwards running;
+}
+@keyframes unmute-width-anim {
+    0% {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes unmute-alpha-anim {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

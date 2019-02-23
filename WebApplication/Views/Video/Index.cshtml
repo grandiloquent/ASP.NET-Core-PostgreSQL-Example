@@ -1,5 +1,5 @@
 @section link
-    {
+{
 
 }
 
@@ -19,10 +19,10 @@
                             <div class="standalone-badge-supported-renderer top-standalone-badge">
                                 <div class="standalone-collection-badge-renderer">
                                     <div class="badge standalone-collection-badge" data-type="STYLE_PLAIN">
-                                        @foreach (var m in Model.Tags)
+                                        @foreach (var m in Model.VideoTags)
                                         {
-                                            <a href="?search_query=@m">
-                                                @m
+                                            <a href="?search_query=@m.Tag.Name">
+                                                @("#" + m.Tag.Name)
                                             </a>
                                         }
 
@@ -32,7 +32,12 @@
                             @*标题*@
                             <h2 class="slim-video-metadata-title">@(Model.Title)</h2>
                             @*标题*@
-
+                            @{
+                                var watched = Model.WatchedCount.FormatTimes() + "观看";
+                                <span class="secondary-text">
+                                    <span aria-label="@watched">@watched</span>
+                                </span>
+                            }
                         </div>
                         <c3-icon class="" role="button" aria-label="展开" aria-expanded="false" flip-for-rtl="false">
                             <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
@@ -48,6 +53,7 @@
                         <div class="material-button button-renderer compact " data-style="[object Object]"
                              data-icon-only="false" is-busy="false" aria-busy="false">
                             <button class="material-button-button" aria-label="与另外 @Model.VoteUp 人一起顶此视频"
+                                    id="like"
                                     aria-pressed="false">
                                 <div class="cbox">
                                     <c3-icon class="button-renderer-icon" flip-for-rtl="false">
@@ -66,6 +72,7 @@
                         <div class="material-button button-renderer compact " data-style="[object Object]"
                              data-icon-only="false" is-busy="false" aria-busy="false">
                             <button class="material-button-button" aria-label="与另外 @Model.VoteDown 人一起踩此视频"
+                                    id="unlike"
                                     aria-pressed="false">
                                 <div class="cbox">
                                     <c3-icon class="button-renderer-icon" flip-for-rtl="false">
@@ -101,13 +108,13 @@
                     <!--actions-->
                     <!--Owner-->
                     <div class="owner">
-                        <a class="owner-icon-and-title" href="?album=@Model.Album">
+                        <a class="owner-icon-and-title" href="?album=@Model.Album.Title">
                             <div class="profile-icon owner-profile-icon">
                                 <img class="profile-icon-img"
                                      src="">
                             </div>
                             <div>
-                                <h3>@Model.Album</h3>
+                                <h3>@Model.Album.Title</h3>
                                 @*订阅数*@
                                 <div class="subhead" hidden>1000</div>
                                 @*订阅数*@
@@ -130,56 +137,29 @@
 
 <div id="player-container-id" class="player-container ">
     <div id="player" class="player-api player-size" initial-load="" playable="true" loading="false">
-        <div class="html5-video-player unstarted-mode ytp-hide-controls ytp-hide-info-bar ytp-small-mode" tabindex="-1"
-             id="movie_player" data-version="@Model.Url"
-             aria-label="YouTube 视频播放器">
+        <div class="html5-video-player unstarted-mode ytp-hide-controls hide-info-bar ytp-small-mode" tabindex="-1"
+             id="movie_player"
+             aria-label="@ViewData["SiteName"] 视频播放器">
             <div class="html5-video-container" data-layer="0">
-                <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload"
-                       @*data-width="@(Model.Width)"
-                       data-height="@(Model.Height)"*@
-                       style="left: 0px; top: -211px;"></video>
+                <video tabindex="-1" class="video-stream html5-main-video"
+                       data-id="@Model.Id"
+                       data-width="@(Model.Width)"
+                       data-height="@(Model.Height)"
+                       style="left: 0px; top: -211px;"
+                       controlsList="nodownload"
+                       controls>
+                </video>
             </div>
-            <button class="ytp-unmute ytp-popup ytp-button ytp-unmute-animated ytp-unmute-shrink" data-layer="2"
-                    style="display: none;">
-                <div class="ytp-unmute-inner">
-                    <div class="ytp-unmute-icon">
-                        <div class="ytp-icon ytp-icon-volume-muted-dark"></div>
-                    </div>
-                    <div class="ytp-unmute-text">点按取消静音</div>
-                    <div class="ytp-unmute-box"></div>
-                </div>
-            </button>
-            <div class="ytp-cued-thumbnail-overlay" data-layer="4" style="">
-                <div class="ytp-cued-thumbnail-overlay-image"
-                     style="background-image: url(../../videos/@Model.Cover);">
-                </div>
-                <button class="ytp-large-play-button ytp-button" aria-label="播放">
-                    <div class="ytp-icon ytp-icon-large-play-button-hover"></div>
-                </button>
-                <div class="ytp-cued-thumbnail-overlay-duration">10:11</div>
-            </div>
-            <div class="ytp-spinner" data-layer="4" style="display: none;">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ytp-spinner-message" style="display: none;">如果稍后没有开始播放，请尝试重新启动设备。</div>
-            </div>
-            <div class="ytp-paid-content-overlay" aria-live="assertive" aria-atomic="true" data-layer="4">
-                <div class="ytp-button ytp-paid-content-overlay-text" style="display: none;"></div>
-            </div>
+            @*{{unmute}}*@
+            @*{{play}}*@
+
+            @*{{loading}}*@
         </div>
     </div>
 </div>
 
 @section script
-    {
+{
     <script src="~/video.js"></script>
-
+    <script>Video.play('@Model.Url')</script>
 }

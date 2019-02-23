@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -24,18 +23,16 @@ namespace WebApplication.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "VideoDetail",
+                name: "Tags",
                 columns: table => new
                 {
                     Id = table.Column<long>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    Height = table.Column<int>(nullable: false),
-                    Width = table.Column<int>(nullable: false),
-                    Duration = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_VideoDetail", x => x.Id);
+                    table.PrimaryKey("PK_Tags", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -46,7 +43,6 @@ namespace WebApplication.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     Cover = table.Column<string>(nullable: true),
                     CreatedAt = table.Column<DateTime>(nullable: false),
-                    Tags = table.Column<List<string>>(nullable: true),
                     Thumbnail = table.Column<string>(nullable: true),
                     Title = table.Column<string>(maxLength: 100, nullable: false),
                     UpdatedAt = table.Column<DateTime>(nullable: false),
@@ -54,8 +50,10 @@ namespace WebApplication.Migrations
                     VoteDown = table.Column<int>(nullable: false),
                     VoteUp = table.Column<int>(nullable: false),
                     WatchedCount = table.Column<int>(nullable: false),
-                    AlbumId = table.Column<long>(nullable: false),
-                    VideoDetailId = table.Column<long>(nullable: false)
+                    Height = table.Column<int>(nullable: false),
+                    Width = table.Column<int>(nullable: false),
+                    Duration = table.Column<string>(nullable: true),
+                    AlbumId = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -66,10 +64,28 @@ namespace WebApplication.Migrations
                         principalTable: "Albums",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "VideoTag",
+                columns: table => new
+                {
+                    VideoId = table.Column<long>(nullable: false),
+                    TagId = table.Column<long>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VideoTag", x => new { x.VideoId, x.TagId });
                     table.ForeignKey(
-                        name: "FK_Videos_VideoDetail_VideoDetailId",
-                        column: x => x.VideoDetailId,
-                        principalTable: "VideoDetail",
+                        name: "FK_VideoTag_Tags_TagId",
+                        column: x => x.TagId,
+                        principalTable: "Tags",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_VideoTag_Videos_VideoId",
+                        column: x => x.VideoId,
+                        principalTable: "Videos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -81,26 +97,35 @@ namespace WebApplication.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_Tags_Name",
+                table: "Tags",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Videos_AlbumId",
                 table: "Videos",
                 column: "AlbumId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Videos_VideoDetailId",
-                table: "Videos",
-                column: "VideoDetailId");
+                name: "IX_VideoTag_TagId",
+                table: "VideoTag",
+                column: "TagId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "VideoTag");
+
+            migrationBuilder.DropTable(
+                name: "Tags");
+
+            migrationBuilder.DropTable(
                 name: "Videos");
 
             migrationBuilder.DropTable(
                 name: "Albums");
-
-            migrationBuilder.DropTable(
-                name: "VideoDetail");
         }
     }
 }

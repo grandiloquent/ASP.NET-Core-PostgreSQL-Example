@@ -8,7 +8,7 @@ namespace WebApplication.Controllers
         public IActionResult Index([FromQuery(Name = "search")] string search)
         {
             Console.WriteLine(search);
-            return StatusCode(200);
+            return StatusCode(501);
         }
     }
 }

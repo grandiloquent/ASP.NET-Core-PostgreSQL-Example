@@ -6,6 +6,7 @@
     <e p="C:\Users\psycho\RiderProjects\WebApplication" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebApplication" t="IncludeRecursive">
+        <e p="1.sql" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -19,8 +20,8 @@
           <e p="VideoController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20190222162456_Initial.cs" t="Include" />
-          <e p="20190222162456_Initial.Designer.cs" t="Include" />
+          <e p="20190223095356_Initial.cs" t="Include" />
+          <e p="20190223095356_Initial.Designer.cs" t="Include" />
           <e p="EfDatabaseContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -30,8 +31,9 @@
           <e p="Feedback.cs" t="Include" />
           <e p="FeedbackDatabaseContext.cs" t="Include" />
           <e p="IDataRepository.cs" t="Include" />
+          <e p="Tag.cs" t="Include" />
           <e p="Video.cs" t="Include" />
-          <e p="VideoDetail.cs" t="Include" />
+          <e p="VideoTag.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -75,8 +77,6 @@
             <e p="_Layout.cshtml" t="Include" />
             <e p="Album.cshtml" t="Include" />
             <e p="Album.cshtml.cs" t="Include" />
-            <e p="VideoDetail.cshtml" t="Include" />
-            <e p="VideoDetail.cshtml.cs" t="Include" />
           </e>
           <e p="Video" t="Include">
             <e p="Index.cshtml" t="Include" />
@@ -84,27 +84,14 @@
           </e>
         </e>
         <e p="WebApplication.csproj" t="IncludeRecursive" />
-        <e p="www" t="Include">
-          <e p="index.html" t="Include" />
-          <e p="page.html" t="Include" />
-          <e p="src" t="Include">
-            <e p="mobile-c3-light-2x-vfl1jZWhO.css" t="Include" />
-            <e p="mobile-polymer-player-ias-mweb-2x-vflHu7DiU.css" t="Include" />
-            <e p="mqdefault.webp" t="Include" />
-            <e p="sddefault.webp" t="Include" />
-          </e>
-        </e>
         <e p="wwwroot" t="Include">
-          <e p="actions.css" t="Include" />
-          <e p="app.css" t="Include" />
           <e p="app.js" t="Include" />
-          <e p="badge.css" t="Include" />
+          <e p="app.min.css" t="Include" />
           <e p="bootstrap" t="Include">
             <e p="bootstrap.css" t="Include" />
             <e p="bootstrap.js" t="Include" />
             <e p="jquery.js" t="Include" />
           </e>
-          <e p="button.css" t="Include" />
           <e p="img" t="Include">
             <e p="cover" t="Include" />
             <e p="profile" t="Include">
@@ -115,22 +102,49 @@
             <e p="player-cougar-2x-vflz5zRX6.png" t="Include" />
           </e>
           <e p="jq.js" t="Include" />
+          <e p="jq.min.js" t="Include" />
           <e p="jqLite.js" t="Include" />
-          <e p="layout.css" t="Include" />
-          <e p="list.css" t="Include" />
-          <e p="login.css" t="Include" />
-          <e p="modal.css" t="Include" />
-          <e p="owner.css" t="Include" />
-          <e p="player.css" t="Include" />
-          <e p="reset.css" t="Include" />
-          <e p="spinner.css" t="Include" />
-          <e p="toolbar.css" t="Include" />
+          <e p="js" t="Include">
+            <e p="loading.js" t="Include" />
+          </e>
+          <e p="json" t="Include">
+            <e p="1.json" t="Include" />
+          </e>
+          <e p="play.js" t="Include" />
+          <e p="style" t="Include">
+            <e p="actions.css" t="Include" />
+            <e p="app.css" t="Include" />
+            <e p="badge.css" t="Include" />
+            <e p="button.css" t="Include" />
+            <e p="layout.css" t="Include" />
+            <e p="list.css" t="Include" />
+            <e p="loading.css" t="Include" />
+            <e p="login.css" t="Include" />
+            <e p="modal.css" t="Include" />
+            <e p="owner.css" t="Include" />
+            <e p="player.css" t="Include" />
+            <e p="reset.css" t="Include" />
+            <e p="spinner.css" t="Include" />
+            <e p="toolbar.css" t="Include" />
+            <e p="unmute.css" t="Include" />
+          </e>
+          <e p="unmute.js" t="Include" />
           <e p="video.js" t="Include" />
           <e p="videos" t="Include">
             <e p="input-265x199.jpg" t="Include" />
             <e p="input-265x199.webp" t="Include" />
             <e p="input.mp4" t="Include" />
             <e p="input.png" t="Include" />
+          </e>
+          <e p="www" t="Include">
+            <e p="index.html" t="Include" />
+            <e p="page.html" t="Include" />
+            <e p="src" t="Include">
+              <e p="mobile-c3-light-2x-vfl1jZWhO.css" t="Include" />
+              <e p="mobile-polymer-player-ias-mweb-2x-vflHu7DiU.css" t="Include" />
+              <e p="mqdefault.webp" t="Include" />
+              <e p="sddefault.webp" t="Include" />
+            </e>
           </e>
         </e>
       </e>

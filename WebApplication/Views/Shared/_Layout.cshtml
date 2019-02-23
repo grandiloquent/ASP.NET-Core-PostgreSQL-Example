@@ -5,10 +5,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/reset.css">
+    @*<link rel="stylesheet" href="~/reset.css">
     <link rel="stylesheet" href="~/player.css">
     <link rel="stylesheet" href="~/layout.css">
     <link rel="stylesheet" href="~/button.css">
@@ -19,6 +20,8 @@
     <link rel="stylesheet" href="~/actions.css">
     <link rel="stylesheet" href="~/spinner.css">
     <link rel="stylesheet" href="~/modal.css"/>
+    <link rel="stylesheet" href="~/unmute.css"/>*@
+    <link rel="stylesheet" href="~/app.min.css"/>    
     @RenderSection("link")
 </head>
 <body>
@@ -89,6 +92,6 @@
 </div>
 <script src="~/jq.js"></script>
 <script src="~/app.js"></script>
-@RenderSection("script");
+@RenderSection("script")
 </body>
 </html>

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -22,19 +23,43 @@ namespace WebApplication.Models
 
             _context.Videos.Remove(video);
 
-            if (video.VideoDetail != null)
-            {
-                _context.Remove(video.VideoDetail);
-            }
 
             _context.SaveChanges();
         }
 
         public IEnumerable<Video> GetAllVideos()
         {
-            return _context.Videos.Include(v => v.Album).Include(v => v.VideoDetail);
+            return _context.Videos.Include(v => v.Album);
         }
 
+        public async Task IncreaseWatchTimes(long id)
+        {
+            var video = await _context.Videos.FindAsync(id);
+            if (video != null)
+            {
+                video.WatchedCount = video.WatchedCount + 1;
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task<int> Like(long id)
+        {
+            var video = await _context.Videos.FindAsync(id);
+            if (video == null) return 0;
+            video.VoteUp = video.VoteUp + 1;
+            await _context.SaveChangesAsync();
+            return video.VoteUp;
+
+        }
+        public async Task<int> Unlike(long id)
+        {
+            var video = await _context.Videos.FindAsync(id);
+            if (video == null) return 0;
+            video.VoteDown = video.VoteDown + 1;
+            await _context.SaveChangesAsync();
+            return video.VoteDown;
+
+        }
         public IEnumerable<Video> GetLastVideos(int limit = 10)
         {
             return _context.Videos.Include(v => v.Album).OrderByDescending(i => i.UpdatedAt).Take(limit);
@@ -59,11 +84,10 @@ namespace WebApplication.Models
             original.VoteUp = changed.VoteUp;
             original.VoteDown = changed.VoteDown;
             original.UpdatedAt = DateTime.UtcNow;
-            original.Tags = changed.Tags;
 
-            original.VideoDetail.Width = changed.VideoDetail.Width;
-            original.VideoDetail.Height = changed.VideoDetail.Height;
-            original.VideoDetail.Duration = changed.VideoDetail.Duration;
+            original.Width = changed.Width;
+            original.Height = changed.Height;
+            original.Duration = changed.Duration;
 
             original.Album.Title = original.Album.Title;
             original.Album.Cover = original.Album.Cover;
@@ -74,12 +98,41 @@ namespace WebApplication.Models
         public int CreateVideo(Video video)
         {
             video.Id = 0;
-            Console.WriteLine(_context.Albums.Count());
             var album = _context.Albums.FirstOrDefault(i => i.Title == video.Album.Title);
             if (album != null)
             {
                 video.AlbumId = album.Id;
                 video.Album = null;
+            }
+            /*else
+           {
+               _context.Albums.Add(video.Album);
+               _context.SaveChanges();
+           }*/
+
+            if (video.VideoTags == null)
+            {
+                video.VideoTags = new List<VideoTag>();
+            }
+
+            foreach (var tag in video.Tags)
+            {
+                var old = _context.Tags.FirstOrDefault(v => v.Name == tag);
+                if (old == null)
+                {
+                    video.VideoTags.Add(new VideoTag
+                    {
+                        Video = video, Tag = new Tag {Name = tag}
+                    });
+                }
+                else
+                {
+                    video.VideoTags.Add(new VideoTag
+                        {
+                            Video = video, Tag = old
+                        }
+                    );
+                }
             }
 
             _context.Videos.Add(video);
@@ -89,7 +142,8 @@ namespace WebApplication.Models
         public Video GetVideo(long id)
         {
             return _context.Videos.Include(v => v.Album)
-                .Include(v => v.VideoDetail)
+                .Include(t => t.VideoTags)
+                .ThenInclude(t => t.Tag)
                 .First(v => v.Id == id);
         }
     }

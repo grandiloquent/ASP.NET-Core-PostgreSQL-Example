@@ -1,3 +1,5 @@
+using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using WebApplication.Shared;
 
@@ -54,7 +56,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Video video,Video original)
+        public IActionResult Edit(Video video, Video original)
         {
             _repository.UpdateVideo(video, original);
             return RedirectToAction("Views");
@@ -63,8 +65,8 @@ namespace WebApplication.Controllers
         public IActionResult Edit(long id)
         {
             ViewBag.CreateMode = false;
-           var video= _repository.GetVideo(id);
-            
+            var video = _repository.GetVideo(id);
+
             return View("Create", _repository.GetVideo(id));
         }
 
@@ -78,6 +80,52 @@ namespace WebApplication.Controllers
         public IActionResult Views()
         {
             return View(_repository.GetAllVideos());
+        }
+
+        [HttpPost]
+        [Route("api/insert")]
+        public IActionResult Insert([FromBody] Video o)
+        {
+            if (o != null)
+            {
+                o.Id = 0;
+                o.CreatedAt = DateTime.UtcNow;
+                o.UpdatedAt = DateTime.UtcNow;
+                _repository.CreateVideo(o);
+                _logger.Log(LogLevel.Trace, "Insert data with api.");
+                return StatusCode((int) HttpStatusCode.OK);
+            }
+            else
+            {
+                return StatusCode((int) HttpStatusCode.BadRequest);
+            }
+        }
+
+        [HttpPost]
+        [Route("api/increase/{id?}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Increase(long id)
+        {
+            await _repository.IncreaseWatchTimes(id);
+            return Content("Success");
+        }
+
+        [HttpPost]
+        [Route("api/like/{id?}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Like(long id)
+        {
+            var val = await _repository.Like(id);
+            return Content(val.ToString());
+        }
+
+        [HttpPost]
+        [Route("api/unlike/{id?}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Unlike(long id)
+        {
+            var val = await _repository.Unlike(id);
+            return Content(val.ToString());
         }
     }
 }

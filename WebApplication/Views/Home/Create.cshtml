@@ -25,6 +25,10 @@
         <input name="original.Cover" value="@Model?.Cover" type="hidden"/>
         <input name="original.Thumbnail" value="@Model?.Thumbnail" type="hidden"/>
         <input name="original.Tags" value="@Model?.Tags" type="hidden"/>
+        <input name="original.Width" value="@Model?.Width" type="hidden"/>
+        <input name="original.Height" value="@Model?.Height" type="hidden"/>
+        <input name="original.Duration" value="@Model?.Duration" type="hidden"/>
+
         <div class="row m-1">
             <div class="col-6">
                 <h5 class="bg-info text-center p-2 text-white">Video</h5>
@@ -45,11 +49,19 @@
                 <div class="form-group">
                     <label asp-for="Tags"></label> <input asp-for="Tags" class="form-control"/>
                 </div>
+                <div class="form-group">
+                    <label asp-for="Width"></label> <input asp-for="Width" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Height"></label> <input asp-for="Height" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Duration"></label> <input asp-for="Duration" class="form-control"/>
+                </div>
             </div>
 
             <div class="col-6">
-                <h5 class="bg-info text-center p-2 text-white">VideoDetail</h5>
-                @Html.Partial("VideoDetail", Model)
+
                 <h5 class="bg-info text-center p-2 text-white">Album</h5>
                 @Html.Partial("Album", Model)
             </div>

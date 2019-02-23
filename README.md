@@ -11,7 +11,9 @@
 
         dotnet ef migrations add Initial -v
         dotnet ef database update
-
+        # 或
+        dotnet ef database drop --force --context EFDatabaseContext && dotnet ef migrations remove -c EfDatabaseContext && dotnet ef migrations add Initial -v -c EfDatabaseContext && dotnet ef database update --context EFDatabaseContext
+        
 ## 依赖项
 
 * [Npgsql](https://github.com/npgsql/npgsql)

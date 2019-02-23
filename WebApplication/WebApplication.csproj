@@ -16,7 +16,6 @@
       <Folder Include="Migrations" />
       <Folder Include="wwwroot\bootstrap" />
       <Folder Include="wwwroot\img\cover" />
-      <Folder Include="www\src" />
     </ItemGroup>
 
     <ItemGroup>

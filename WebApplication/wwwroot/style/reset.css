@@ -177,8 +177,13 @@ input {
     font: inherit;
     color: #111;
 }
+
 input {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #737373;
+}
+
+.secondary-text {
+    color: rgba(17, 17, 17, 0.6);
 }
