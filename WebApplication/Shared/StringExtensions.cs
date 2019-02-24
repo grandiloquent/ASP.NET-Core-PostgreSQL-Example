@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -6,6 +7,11 @@ namespace WebApplication.Shared
 {
     public static class StringExtensions
     {
+        public static bool IsReadable(this string value)
+        {
+            return value != null && value.Any(t => !char.IsWhiteSpace(t));
+        }
+
         public static string Encrypt(this string toEncrypt, string key, string iv)
         {
             try
@@ -25,7 +31,6 @@ namespace WebApplication.Shared
             {
                 return null;
             }
-
         }
 
         public static string Decrypt(this string toDecrypt, string key, string iv)
@@ -47,7 +52,6 @@ namespace WebApplication.Shared
             {
                 return null;
             }
-
         }
     }
 }

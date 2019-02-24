@@ -11,10 +11,10 @@ namespace WebApplication.Models
         Task<int> Like(long id);
         void Delete(long id);
         IEnumerable<Video> GetAllVideos();
-        int CreateVideo(Video video);
+        Task<int> CreateVideo(Video video);
         Video GetVideo(long id);
         Task IncreaseWatchTimes(long id);
         IEnumerable<Video> GetLastVideos(int limit = 10);
-        void UpdateVideo(Video changed, Video original = null);
+        Task<int> UpdateVideo(Video changed, Video original = null);
     }
 }

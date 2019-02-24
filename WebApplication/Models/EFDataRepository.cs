@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using WebApplication.Shared;
 
 namespace WebApplication.Models
 {
@@ -49,8 +50,8 @@ namespace WebApplication.Models
             video.VoteUp = video.VoteUp + 1;
             await _context.SaveChangesAsync();
             return video.VoteUp;
-
         }
+
         public async Task<int> Unlike(long id)
         {
             var video = await _context.Videos.FindAsync(id);
@@ -58,14 +59,14 @@ namespace WebApplication.Models
             video.VoteDown = video.VoteDown + 1;
             await _context.SaveChangesAsync();
             return video.VoteDown;
-
         }
+
         public IEnumerable<Video> GetLastVideos(int limit = 10)
         {
             return _context.Videos.Include(v => v.Album).OrderByDescending(i => i.UpdatedAt).Take(limit);
         }
 
-        public void UpdateVideo(Video changed, Video original = null)
+        public async Task<int> UpdateVideo(Video changed, Video original = null)
         {
             if (original == null)
             {
@@ -76,39 +77,64 @@ namespace WebApplication.Models
                 _context.Videos.Attach(original);
             }
 
-            original.Title = changed.Title;
-            original.Cover = changed.Cover;
-            original.Url = changed.Url;
-            original.Thumbnail = changed.Thumbnail;
-            original.WatchedCount = changed.WatchedCount;
-            original.VoteUp = changed.VoteUp;
-            original.VoteDown = changed.VoteDown;
-            original.UpdatedAt = DateTime.UtcNow;
+            if (!string.IsNullOrWhiteSpace(changed.Cover)) original.Cover = changed.Cover;
+            if (!string.IsNullOrWhiteSpace(changed.Thumbnail)) original.Thumbnail = changed.Thumbnail;
+            if (!string.IsNullOrWhiteSpace(changed.Title)) original.Title = changed.Title;
+            if (!string.IsNullOrWhiteSpace(changed.Url)) original.Url = changed.Url;
+            if (!string.IsNullOrWhiteSpace(changed.Duration)) original.Duration = changed.Duration;
 
-            original.Width = changed.Width;
-            original.Height = changed.Height;
-            original.Duration = changed.Duration;
 
-            original.Album.Title = original.Album.Title;
-            original.Album.Cover = original.Album.Cover;
+            if (changed.VoteDown > 0) original.VoteDown = changed.VoteDown;
+            if (changed.VoteUp > 0) original.VoteUp = changed.VoteUp;
+            if (changed.WatchedCount > 0) original.WatchedCount = changed.WatchedCount;
+            if (changed.Height > 0) original.Height = changed.Height;
+            if (changed.Width > 0) original.Width = changed.Width;
 
-            _context.SaveChanges();
+
+            if (changed.CreatedAt.Year != 1)
+            {
+                original.CreatedAt = changed.CreatedAt;
+            }
+
+            original.UpdatedAt = changed.UpdatedAt.Year == 1 ? DateTime.UtcNow : changed.UpdatedAt;
+
+            if (changed.Album != null)
+            {
+                var album = await _context.Albums.FirstOrDefaultAsync(i => i.Title == changed.Album.Title);
+                if (album != null)
+                {
+                    original.AlbumId = album.Id;
+                }
+                else
+                {
+                    original.Album = changed.Album;
+                }
+            }
+
+            if (changed.Tags == null || changed.Tags.Count <= 0) return await _context.SaveChangesAsync();
+            original.VideoTags.Clear();
+            foreach (var tag in changed.Tags)
+            {
+                var old = await _context.Tags.FirstOrDefaultAsync(v => v.Name == tag) ?? new Tag {Name = tag};
+
+                original.VideoTags.Add(new VideoTag
+                    {
+                        Video = original, Tag = old
+                    }
+                );
+            }
+
+            return await _context.SaveChangesAsync();
         }
 
-        public int CreateVideo(Video video)
+        public async Task<int> CreateVideo(Video video)
         {
             video.Id = 0;
-            var album = _context.Albums.FirstOrDefault(i => i.Title == video.Album.Title);
+            var album = await _context.Albums.FirstOrDefaultAsync(i => i.Title == video.Album.Title);
             if (album != null)
             {
                 video.AlbumId = album.Id;
-                video.Album = null;
             }
-            /*else
-           {
-               _context.Albums.Add(video.Album);
-               _context.SaveChanges();
-           }*/
 
             if (video.VideoTags == null)
             {
@@ -117,7 +143,7 @@ namespace WebApplication.Models
 
             foreach (var tag in video.Tags)
             {
-                var old = _context.Tags.FirstOrDefault(v => v.Name == tag);
+                var old = await _context.Tags.FirstOrDefaultAsync(v => v.Name == tag);
                 if (old == null)
                 {
                     video.VideoTags.Add(new VideoTag
@@ -135,8 +161,8 @@ namespace WebApplication.Models
                 }
             }
 
-            _context.Videos.Add(video);
-            return _context.SaveChanges();
+            await _context.Videos.AddAsync(video);
+            return await _context.SaveChangesAsync();
         }
 
         public Video GetVideo(long id)

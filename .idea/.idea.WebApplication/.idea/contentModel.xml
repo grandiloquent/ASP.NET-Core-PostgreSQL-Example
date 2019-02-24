@@ -50,6 +50,7 @@
           <e p="CoreExtensions.cs" t="Include" />
           <e p="FormatterExtension.cs" t="Include" />
           <e p="GenericExtensions.cs" t="Include" />
+          <e p="QueryableExtensions.cs" t="Include" />
           <e p="StringExtensions.cs" t="Include" />
         </e>
         <e p="sql.sql" t="Include" />
@@ -109,6 +110,7 @@
           </e>
           <e p="json" t="Include">
             <e p="1.json" t="Include" />
+            <e p="update.json" t="Include" />
           </e>
           <e p="play.js" t="Include" />
           <e p="style" t="Include">

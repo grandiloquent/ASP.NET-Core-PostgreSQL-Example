@@ -55,20 +55,6 @@ namespace WebApplication.Controllers
             return RedirectToAction("Views");
         }
 
-        [HttpPost]
-        public IActionResult Edit(Video video, Video original)
-        {
-            _repository.UpdateVideo(video, original);
-            return RedirectToAction("Views");
-        }
-
-        public IActionResult Edit(long id)
-        {
-            ViewBag.CreateMode = false;
-            var video = _repository.GetVideo(id);
-
-            return View("Create", _repository.GetVideo(id));
-        }
 
         public IActionResult Index()
         {
@@ -86,19 +72,25 @@ namespace WebApplication.Controllers
         [Route("api/insert")]
         public IActionResult Insert([FromBody] Video o)
         {
-            if (o != null)
+            if (o == null) return BadRequest("Illegal data");
+            o.Id = 0;
+            o.CreatedAt = DateTime.UtcNow;
+            o.UpdatedAt = DateTime.UtcNow;
+            _repository.CreateVideo(o);
+            return StatusCode((int) HttpStatusCode.OK);
+        }
+
+        [HttpPost]
+        [Route("api/update")]
+        public async Task<IActionResult> Update([FromBody] Video o)
+        {
+            if (o.Id < 1)
             {
-                o.Id = 0;
-                o.CreatedAt = DateTime.UtcNow;
-                o.UpdatedAt = DateTime.UtcNow;
-                _repository.CreateVideo(o);
-                _logger.Log(LogLevel.Trace, "Insert data with api.");
-                return StatusCode((int) HttpStatusCode.OK);
+                return BadRequest("更新数据必须提供 ID");
             }
-            else
-            {
-                return StatusCode((int) HttpStatusCode.BadRequest);
-            }
+
+            var result = await _repository.UpdateVideo(o);
+            return Content("Success. Operation: " + result);
         }
 
         [HttpPost]

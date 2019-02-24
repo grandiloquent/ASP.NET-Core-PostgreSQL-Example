@@ -5,50 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1956392d-ac6a-427b-a5c2-98b658863b6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication/wwwroot/www/src/mobile-polymer-player-ias-mweb-2x-vflHu7DiU.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/ResultsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/ResultsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Migrations/20190222162456_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Migrations/20190222162456_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Migrations/EfDatabaseContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Migrations/EfDatabaseContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/Album.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/Album.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/EfDatabaseContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/EfDatabaseContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/Video.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/Video.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/VideoDetail.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Home/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Home/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Home/Views.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Home/Views.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Shared/VideoDetail.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Shared/VideoDetail.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/www/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/www/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/www/src/mobile-c3-light-2x-vfl1jZWhO.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/www/src/mobile-c3-light-2x-vfl1jZWhO.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/www/src/mobile-polymer-player-ias-mweb-2x-vflHu7DiU.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/www/src/mqdefault.webp" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/www/src/mqdefault.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/www/src/sddefault.webp" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/www/src/sddefault.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/actions.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/badge.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/owner.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/player.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/spinner.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/toolbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/video.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,69 +20,78 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/video.js">
+        <entry file="file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+            <state relative-caret-position="-250">
+              <caret line="90" column="66" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
+              <folding>
+                <marker date="1550993062166" expanded="false" signature="6:198" ph="..." />
+                <marker date="1550993062166" expanded="true" signature="231:5623" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="285:5621" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="400:448" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="486:626" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="676:754" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="809:1061" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="911:1051" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="1107:1354" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="1402:1655" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="1720:1846" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="1928:4203" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="1972:2061" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="2078:2156" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="3047:3131" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="3272:3637" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="3429:3514" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="3535:3623" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="3831:4138" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4030:4105" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4260:5373" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4429:4499" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4541:4625" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4670:5257" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4804:5005" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="4896:4985" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="5026:5243" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="5122:5202" ph="{...}" />
+                <marker date="1550993062166" expanded="true" signature="5413:5615" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml">
+        <entry file="file://$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+            <state relative-caret-position="1091">
+              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
               <folding>
-                <marker date="1550926941087" expanded="true" signature="0:18" ph="@{...}" />
-                <marker date="1550926941087" expanded="true" signature="85:7003" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="155:6995" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="318:6982" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="366:6967" ph="&lt;lazy-list.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="394:6942" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="457:2253" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="522:1855" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="601:1338" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="704:1303" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="791:1264" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="903:1220" ph="@..." />
-                <marker date="1550926941087" expanded="true" signature="938:1220" ph="{...}" />
-                <marker date="1550926941087" expanded="true" signature="1025:1178" ph="&lt;a.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="1523:1824" ph="@..." />
-                <marker date="1550926941087" expanded="true" signature="1645:1794" ph="&lt;span.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="1880:2226" ph="&lt;c3-icon.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2000:2191" ph="&lt;svg.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2310:6132" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2409:3747" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2607:3716" ph="&lt;button.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2821:3678" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2876:3411" ph="&lt;c3-icon.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="2976:3364" ph="&lt;svg.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="3448:3639" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="3805:5144" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="4003:5113" ph="&lt;button.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="4221:5075" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="4276:4805" ph="&lt;c3-icon.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="4376:4758" ph="&lt;svg.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="4842:5036" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="5203:6103" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="5399:6072" ph="&lt;button.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="5487:6034" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="5542:5916" ph="&lt;c3-icon.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="5642:5869" ph="&lt;svg.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="6221:6884" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="6265:6856" ph="&lt;a.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="6359:6546" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="6437:6511" ph="&lt;img.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="6575:6827" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="7005:7944" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="7066:7937" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="7171:7926" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="7377:7830" ph="&lt;div.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="7444:7811" ph="&lt;video.../&gt;" />
-                <marker date="1550926941087" expanded="true" signature="7843:7911" ph="@*...*@" />
-                <marker date="1550926941087" expanded="true" signature="7946:8050" ph="@{...}" />
+                <marker date="1550992440139" expanded="false" signature="6:124" ph="..." />
+                <marker date="1550992440139" expanded="true" signature="162:3387" ph="{...}" />
+                <marker date="1550992440139" expanded="false" signature="175:387" ph="..." />
+                <marker date="1550992440139" expanded="true" signature="433:3385" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="642:730" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="769:897" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="966:1407" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="989:1198" ph="/* if (!ModelState.IsValid) ... */" />
+                <marker date="1550992440139" expanded="true" signature="1472:1574" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="1613:1756" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="1794:1867" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="1973:2259" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="2377:2622" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="2413:2491" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="2764:2877" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="3011:3125" ph="{...}" />
+                <marker date="1550992440139" expanded="true" signature="3263:3379" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/json/update.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -183,56 +153,56 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/_ViewImports.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Models/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Models/Video.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Models/EfDatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/dc/dbb3ca64/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Models/Tag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Models/VideoTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Shared/Album.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Shared/Album.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Create.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Create.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Shared/CoreExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Models/FeedbackDatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Shared/QueryableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96EE8D1B-889D-4F26-B7BD-4CC3F07CA395/b8/c8a61f7e/WebHost.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/_ViewStart.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A2DDBDA9-1E09-414A-801B-36BA566856C2/f7/d7c4f79e/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35D1D668-9205-4C08-8AC0-8401C2EDB00B/7e/657cab6c/IHtmlHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Binders/SplitModelBinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Shared/GenericExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/ResultsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Shared/FormatterExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Views.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Views.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Models/Album.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp2.2/Razor/Views/Home/Views.g.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/HelpController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35D1D668-9205-4C08-8AC0-8401C2EDB00B/e3/48ea3364/HtmlHelperLabelExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/Feedback.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/FeedBack.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Models/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/dc/dbb3ca64/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Models/Tag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Models/VideoTag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96EE8D1B-889D-4F26-B7BD-4CC3F07CA395/b8/c8a61f7e/WebHost.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Shared/FormatterExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp2.2/Razor/Views/Home/Views.g.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/VideoController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5DE0699-67A3-4153-B5F3-BB3DF17B02C1/d9/1865482d/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/HelpController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35D1D668-9205-4C08-8AC0-8401C2EDB00B/e3/48ea3364/HtmlHelperLabelExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/Feedback.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Views/Help/FeedBack.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebApplication/Views/Help/Index.cshtml.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Views/Help/Index.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication/Views/Help/FeedBack.cshtml.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Views/Help/FeedBack.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication/Views/Help/Feedback.cshtml" />
@@ -275,13 +245,15 @@
         <option value="$PROJECT_DIR$/WebApplication/wwwroot/js/loading.js" />
         <option value="$PROJECT_DIR$/WebApplication/wwwroot/json/1.json" />
         <option value="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" />
-        <option value="$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs" />
         <option value="$PROJECT_DIR$/WebApplication/wwwroot/style/reset.css" />
-        <option value="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication/wwwroot/video.js" />
+        <option value="$PROJECT_DIR$/WebApplication/Shared/QueryableExtensions.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/wwwroot/json/update.json" />
+        <option value="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" />
       </list>
     </option>
   </component>
@@ -299,24 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebApplication" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebApplication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="WebApplication" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="FileSystemExplorer">
         <subPane>
           <expand>
@@ -328,6 +282,12 @@
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
               <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
               <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Controllers" type="34e6ba20:FileSystemExplorerNode" />
             </path>
             <path>
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
@@ -345,33 +305,6 @@
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
               <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
               <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Home" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Shared" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Video" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
               <item name="wwwroot" type="34e6ba20:FileSystemExplorerNode" />
             </path>
             <path>
@@ -379,11 +312,29 @@
               <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
               <item name="WebApplication" type="34e6ba20:FileSystemExplorerNode" />
               <item name="wwwroot" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="style" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="json" type="34e6ba20:FileSystemExplorerNode" />
             </path>
           </expand>
           <select />
         </subPane>
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="WebApplication" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="WebApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="WebApplication" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -441,11 +392,13 @@
       <workItem from="1550797557714" duration="18153000" />
       <workItem from="1550836676726" duration="13904000" />
       <workItem from="1550891270061" duration="32007000" />
+      <workItem from="1550937848227" duration="533000" />
+      <workItem from="1550988501643" duration="4556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110741000" />
+    <option name="totallyTimeSpent" value="115830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,10 +411,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26172465" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26928896" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -477,7 +431,7 @@
       <window_info anchor="bottom" id="Message" order="10" />
       <window_info anchor="bottom" id="Find" order="11" />
       <window_info anchor="bottom" id="Run" order="12" sideWeight="0.49848714" weight="0.39443535" />
-      <window_info anchor="bottom" id="Debug" order="13" weight="0.3797054" />
+      <window_info active="true" anchor="bottom" id="Debug" order="13" visible="true" weight="0.3797054" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="16" />
@@ -504,333 +458,34 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs</url>
-          <line>69</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" initialLine="67">
+          <line>91</line>
+          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" initialLine="92">
             <startOffsets>
-              <option value="1935" />
+              <option value="2518" />
             </startOffsets>
             <endOffsets>
-              <option value="1983" />
+              <option value="2551" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs</url>
-          <line>137</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" initialLine="91">
+          <url>file://$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs</url>
+          <line>86</line>
+          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" initialLine="87">
             <startOffsets>
-              <option value="4009" />
+              <option value="2400" />
             </startOffsets>
             <endOffsets>
-              <option value="4036" />
+              <option value="2413" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs</url>
-          <line>138</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" initialLine="92">
-            <startOffsets>
-              <option value="4049" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4079" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs</url>
-          <line>117</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" initialLine="79">
-            <startOffsets>
-              <option value="3388" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3419" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs</url>
-          <line>120</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" initialLine="82">
-            <startOffsets>
-              <option value="3526" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3542" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs</url>
-          <line>99</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs" initialLine="70">
-            <startOffsets>
-              <option value="2872" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2885" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebApplication/Shared/CoreExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <marker date="1550844371610" expanded="false" signature="6:63" ph="..." />
-            <marker date="1550844371610" expanded="true" signature="137:692" ph="{...}" />
-            <marker date="1550844371610" expanded="true" signature="248:686" ph="{...}" />
-            <marker date="1550844371610" expanded="true" signature="364:641" ph="{...}" />
-            <marker date="1550844371610" expanded="true" signature="542:627" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Shared/FormatterExtension.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <marker date="1550855159067" expanded="true" signature="46:1766" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="91:1764" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="154:403" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="192:249" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="285:359" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="471:1758" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="1390:1562" ph="{...}" />
-            <marker date="1550855159067" expanded="true" signature="1579:1748" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/modal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/jqLite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="991" lean-forward="true" selection-start-line="983" selection-start-column="3" selection-end-line="991" />
-          <folding>
-            <element signature="e#15#785#0" />
-            <element signature="e#787#867#0" />
-            <element signature="e#869#903#0" />
-            <element signature="e#949#7309#0" />
-            <element signature="e#7386#7446#0" />
-            <element signature="e#7477#7581#0" />
-            <element signature="e#7809#7970#0" />
-            <element signature="e#8002#8067#0" />
-            <element signature="e#8110#8146#0" />
-            <element signature="e#8148#8225#0" />
-            <element signature="e#8254#8334#0" />
-            <element signature="e#8574#8886#0" />
-            <element signature="e#9067#9106#0" />
-            <element signature="e#9141#9404#0" />
-            <element signature="e#9147#9203#0" />
-            <element signature="e#9435#9526#0" />
-            <element signature="e#9478#9506#0" />
-            <element signature="e#9572#10617#0" />
-            <element signature="e#9707#9809#0" />
-            <element signature="e#9815#10396#0" />
-            <element signature="e#10232#10276#0" />
-            <element signature="e#10548#10591#0" />
-            <element signature="e#10984#11122#0" />
-            <element signature="e#11037#11088#0" />
-            <element signature="e#11265#11277#0" />
-            <element signature="e#11292#11393#0" />
-            <element signature="e#11467#12164#0" />
-            <element signature="e#11504#11535#0" />
-            <element signature="e#11586#11654#0" />
-            <element signature="e#11690#11956#0" />
-            <element signature="e#11746#11914#0" />
-            <element signature="e#11979#12042#0" />
-            <element signature="e#12073#12110#0" />
-            <element signature="e#12116#12162#0" />
-            <element signature="e#12196#12235#0" />
-            <element signature="e#12503#12590#0" />
-            <element signature="e#12542#12571#0" />
-            <element signature="e#12628#13042#0" />
-            <element signature="e#12905#13040#0" />
-            <element signature="e#13095#14279#0" />
-            <element signature="e#13446#13639#0" />
-            <element signature="e#13477#13633#0" />
-            <element signature="e#13516#13590#0" />
-            <element signature="e#13645#14244#0" />
-            <element signature="e#13691#14032#0" />
-            <element signature="e#13768#13835#0" />
-            <element signature="e#13911#14022#0" />
-            <element signature="e#14083#14236#0" />
-            <element signature="e#14157#14226#0" />
-            <element signature="e#14322#14611#0" />
-            <element signature="e#14438#14609#0" />
-            <element signature="e#14458#14513#0" />
-            <element signature="e#14519#14566#0" />
-            <element signature="e#14670#14978#0" />
-            <element signature="e#14808#14950#0" />
-            <element signature="e#15022#16005#0" />
-            <element signature="e#15060#16003#0" />
-            <element signature="e#15386#15464#0" />
-            <element signature="e#15470#15997#0" />
-            <element signature="e#15500#15555#0" />
-            <element signature="e#15561#15987#0" />
-            <element signature="e#15599#15777#0" />
-            <element signature="e#15601#15615#0" />
-            <element signature="e#15783#15973#0" />
-            <element signature="e#15870#15955#0" />
-            <element signature="e#16278#16797#0" />
-            <element signature="e#16324#16795#0" />
-            <element signature="e#16547#16669#0" />
-            <element signature="e#16717#16789#0" />
-            <element signature="e#17113#17290#0" />
-            <element signature="e#17219#17280#0" />
-            <element signature="e#17338#17410#0" />
-            <element signature="e#17461#18155#0" />
-            <element signature="e#17553#18153#0" />
-            <element signature="e#17631#17686#0" />
-            <element signature="e#17692#18147#0" />
-            <element signature="e#17869#18068#0" />
-            <element signature="e#17899#18054#0" />
-            <element signature="e#17954#18036#0" />
-            <element signature="e#18074#18137#0" />
-            <element signature="e#18199#18290#0" />
-            <element signature="e#18343#19148#0" />
-            <element signature="e#18349#18420#0" />
-            <element signature="e#18517#18567#0" />
-            <element signature="e#18636#19146#0" />
-            <element signature="e#18694#18786#0" />
-            <element signature="e#18796#18888#0" />
-            <element signature="e#19180#19304#0" />
-            <element signature="e#19246#19302#0" />
-            <element signature="e#19347#19474#0" />
-            <element signature="e#19520#19929#0" />
-            <element signature="e#19595#19799#0" />
-            <element signature="e#19605#19664#0" />
-            <element signature="e#19805#19927#0" />
-            <element signature="e#19956#20591#0" />
-            <element signature="e#19981#20129#0" />
-            <element signature="e#20225#20263#0" />
-            <element signature="e#20269#20589#0" />
-            <element signature="e#20762#21145#0" />
-            <element signature="e#20813#20948#0" />
-            <element signature="e#20975#21069#0" />
-            <element signature="e#21148#21190#0" />
-            <element signature="e#21618#21657#0" />
-            <element signature="e#21679#21835#0" />
-            <element signature="e#21881#22137#0" />
-            <element signature="e#22173#22207#0" />
-            <element signature="e#22653#22871#0" />
-            <element signature="e#22910#23103#0" />
-            <element signature="e#23173#23238#0" />
-            <element signature="e#23401#23587#0" />
-            <element signature="e#23472#23524#0" />
-            <element signature="e#23530#23581#0" />
-            <element signature="e#23839#23870#0" />
-            <element signature="e#24007#24279#0" />
-            <element signature="e#24102#24164#0" />
-            <element signature="e#24170#24269#0" />
-            <element signature="e#24404#24457#0" />
-            <element signature="e#24643#24778#0" />
-            <element signature="e#24675#24721#0" />
-            <element signature="e#24727#24772#0" />
-            <element signature="e#25759#25808#0" />
-            <element signature="e#25940#26020#0" />
-            <element signature="e#26139#26235#0" />
-            <element signature="e#26491#27679#0" />
-            <element signature="e#26525#27095#0" />
-            <element signature="e#26656#27008#0" />
-            <element signature="e#26701#26834#0" />
-            <element signature="e#26840#26990#0" />
-            <element signature="e#26884#26968#0" />
-            <element signature="e#27101#27669#0" />
-            <element signature="e#27119#27161#0" />
-            <element signature="e#27478#27625#0" />
-            <element signature="e#27685#27918#0" />
-            <element signature="e#27787#27843#0" />
-            <element signature="e#27976#29718#0" />
-            <element signature="e#28023#29522#0" />
-            <element signature="e#28102#28156#0" />
-            <element signature="e#28370#28845#0" />
-            <element signature="e#28511#28834#0" />
-            <element signature="e#28615#28679#0" />
-            <element signature="e#28735#28820#0" />
-            <element signature="e#28904#28978#0" />
-            <element signature="e#29264#29321#0" />
-            <element signature="e#29372#29516#0" />
-            <element signature="e#29430#29506#0" />
-            <element signature="e#29529#29625#0" />
-            <element signature="e#29776#29813#0" />
-            <element signature="e#29875#30368#0" />
-            <element signature="e#29881#29943#0" />
-            <element signature="e#30092#30165#0" />
-            <element signature="e#30322#30366#0" />
-            <element signature="e#30370#30412#0" />
-            <element signature="e#30926#30957#0" />
-            <element signature="e#31127#31218#0" />
-            <element signature="e#31455#31842#0" />
-            <element signature="e#31526#31800#0" />
-            <element signature="e#31707#31786#0" />
-            <element signature="e#31865#32145#0" />
-            <element signature="e#31935#32080#0" />
-            <element signature="e#32086#32135#0" />
-            <element signature="e#32258#32308#0" />
-            <element signature="e#32634#32990#0" />
-            <element signature="e#32771#32982#0" />
-            <element signature="e#32796#32873#0" />
-            <element signature="e#32879#32946#0" />
-            <element signature="e#33025#33264#0" />
-            <element signature="e#33108#33231#0" />
-            <element signature="e#33166#33221#0" />
-            <element signature="e#33299#33374#0" />
-            <element signature="e#33642#33726#0" />
-            <element signature="e#34052#34127#0" />
-            <element signature="e#34187#34231#0" />
-            <element signature="e#34275#34638#0" />
-            <element signature="e#34356#34632#0" />
-            <element signature="e#34473#34622#0" />
-            <element signature="e#34851#35148#0" />
-            <element signature="e#34950#35043#0" />
-            <element signature="e#35199#35337#0" />
-            <element signature="e#35368#35418#0" />
-            <element signature="e#35459#35619#0" />
-            <element signature="e#35503#35573#0" />
-            <element signature="e#35579#35613#0" />
-            <element signature="e#35709#37229#0" />
-            <element signature="e#35997#37223#0" />
-            <element signature="e#36084#36584#0" />
-            <element signature="e#36697#36768#0" />
-            <element signature="e#37059#37211#0" />
-            <element signature="e#37126#37197#0" />
-            <element signature="e#37252#37874#0" />
-            <element signature="e#37258#37295#0" />
-            <element signature="e#37352#37871#0" />
-            <element signature="e#37429#37817#0" />
-            <element signature="e#37467#37716#0" />
-            <element signature="e#37562#37702#0" />
-            <element signature="e#37722#37807#0" />
-            <element signature="e#38051#38063#0" />
-            <element signature="e#38162#38670#0" />
-            <element signature="e#38210#38326#0" />
-            <element signature="e#38374#38490#0" />
-            <element signature="e#38541#38660#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -838,25 +493,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="183" column="1" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/toolbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/jq.js.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1710" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/reset.css" />
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/toolbar.css" />
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/jq.js.min.js" />
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/jq.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -946,20 +585,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Models/VideoDetail.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Views/Shared/VideoDetail.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Models/VideoDetail.cs" />
+    <entry file="file://$PROJECT_DIR$/WebApplication/Views/Shared/VideoDetail.cshtml" />
     <entry file="file://$PROJECT_DIR$/WebApplication/Views/Shared/Album.cshtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1064,25 +691,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/player.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="209" column="21" lean-forward="true" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/player.css" />
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/www/src/mobile-c3-light-2x-vfl1jZWhO.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/unmute.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="72" column="7" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/unmute.css" />
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/www/src/mobile-polymer-player-ias-mweb-2x-vflHu7DiU.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1138,13 +753,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/spinner.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/spinner.css" />
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/app.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1272,26 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Models/Video.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <marker date="1550910581967" expanded="false" signature="6:96" ph="..." />
-            <marker date="1550910581967" expanded="true" signature="129:1293" ph="{...}" />
-            <marker date="1550910581967" expanded="false" signature="142:339" ph="..." />
-            <marker date="1550910581967" expanded="true" signature="363:1291" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/json/1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5DE0699-67A3-4153-B5F3-BB3DF17B02C1/d9/1865482d/HttpStatusCode.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1381,26 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <marker date="1550925662494" expanded="true" signature="6:68" ph="..." />
-            <marker date="1550925662494" expanded="true" signature="101:1855" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="144:1853" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="233:1008" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="259:910" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="527:647" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="940:997" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="1092:1847" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="1118:1749" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="1388:1508" ph="{...}" />
-            <marker date="1550925662494" expanded="true" signature="1779:1836" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/style/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -1408,83 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <marker date="1550926743069" expanded="false" signature="6:96" ph="..." />
-            <marker date="1550926743069" expanded="true" signature="129:558" ph="{...}" />
-            <marker date="1550926743069" expanded="true" signature="168:556" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="46" />
-          <folding>
-            <marker date="1550926743065" expanded="false" signature="6:169" ph="..." />
-            <marker date="1550926743065" expanded="true" signature="202:4339" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="256:4337" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="371:419" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="457:597" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="647:725" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="780:1032" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="882:1022" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="1078:1326" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="1373:1627" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="1691:1817" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="1888:2804" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="1932:2021" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="2038:2116" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="2849:4089" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3007:3113" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3126:3248" ph="/* else ... */" />
-            <marker date="1550926743065" expanded="true" signature="3290:3374" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3419:3995" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3542:3743" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3634:3723" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3764:3981" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="3860:3940" ph="{...}" />
-            <marker date="1550926743065" expanded="true" signature="4129:4331" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="121" column="18" lean-forward="true" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
-          <folding>
-            <marker date="1550926743060" expanded="false" signature="6:124" ph="..." />
-            <marker date="1550926743060" expanded="true" signature="162:3638" ph="{...}" />
-            <marker date="1550926743060" expanded="false" signature="175:387" ph="..." />
-            <marker date="1550926743060" expanded="true" signature="433:3636" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="642:730" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="769:897" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="966:1407" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="989:1198" ph="/* if (!ModelState.IsValid) ... */" />
-            <marker date="1550926743060" expanded="true" signature="1472:1574" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="1657:1777" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="1821:1993" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="2031:2174" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="2212:2285" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="2391:2873" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="2428:2750" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="2767:2863" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="3015:3128" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="3262:3376" ph="{...}" />
-            <marker date="1550926743060" expanded="true" signature="3514:3630" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication/Views/Video/Index.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+        <state relative-caret-position="552">
+          <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
           <folding>
             <marker date="1550926941087" expanded="true" signature="0:18" ph="@{...}" />
             <marker date="1550926941087" expanded="true" signature="85:7003" ph="&lt;div.../&gt;" />
@@ -1540,8 +1036,166 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        <state relative-caret-position="-612">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Shared/QueryableExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <marker date="1550989330983" expanded="true" signature="6:183" ph="..." />
+            <marker date="1550989330983" expanded="true" signature="216:1926" ph="{...}" />
+            <marker date="1550989330983" expanded="true" signature="262:1924" ph="{...}" />
+            <marker date="1550989330983" expanded="true" signature="1067:1918" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Controllers/VideoController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1550843600003" expanded="true" signature="36:570" ph="{...}" />
+            <marker date="1550843600003" expanded="false" signature="43:97" ph="..." />
+            <marker date="1550843600003" expanded="true" signature="143:569" ph="{...}" />
+            <marker date="1550843600003" expanded="true" signature="250:308" ph="{...}" />
+            <marker date="1550843600003" expanded="true" signature="352:567" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A2DDBDA9-1E09-414A-801B-36BA566856C2/f7/d7c4f79e/String.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="410" column="18" lean-forward="true" selection-start-line="403" selection-start-column="5" selection-end-line="410" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Shared/StringExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <marker date="1550990350468" expanded="false" signature="6:87" ph="..." />
+            <marker date="1550990350468" expanded="true" signature="120:2025" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="163:2023" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="226:321" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="405:1179" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="431:1082" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="699:819" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="1112:1169" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="1263:2017" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="1289:1920" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="1559:1679" ph="{...}" />
+            <marker date="1550990350468" expanded="true" signature="1950:2007" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Models/Video.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <marker date="1550910581967" expanded="false" signature="6:96" ph="..." />
+            <marker date="1550910581967" expanded="true" signature="129:1293" ph="{...}" />
+            <marker date="1550910581967" expanded="false" signature="142:339" ph="..." />
+            <marker date="1550910581967" expanded="true" signature="363:1291" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/json/1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Models/IDataRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <marker date="1550992473986" expanded="false" signature="6:96" ph="..." />
+            <marker date="1550992473986" expanded="true" signature="129:569" ph="{...}" />
+            <marker date="1550992473986" expanded="true" signature="168:567" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/wwwroot/json/update.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1091">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+          <folding>
+            <marker date="1550992440139" expanded="false" signature="6:124" ph="..." />
+            <marker date="1550992440139" expanded="true" signature="162:3387" ph="{...}" />
+            <marker date="1550992440139" expanded="false" signature="175:387" ph="..." />
+            <marker date="1550992440139" expanded="true" signature="433:3385" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="642:730" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="769:897" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="966:1407" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="989:1198" ph="/* if (!ModelState.IsValid) ... */" />
+            <marker date="1550992440139" expanded="true" signature="1472:1574" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="1613:1756" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="1794:1867" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="1973:2259" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="2377:2622" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="2413:2491" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="2764:2877" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="3011:3125" ph="{...}" />
+            <marker date="1550992440139" expanded="true" signature="3263:3379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication/Models/EFDataRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="90" column="66" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
+          <folding>
+            <marker date="1550993062166" expanded="false" signature="6:198" ph="..." />
+            <marker date="1550993062166" expanded="true" signature="231:5623" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="285:5621" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="400:448" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="486:626" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="676:754" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="809:1061" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="911:1051" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="1107:1354" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="1402:1655" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="1720:1846" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="1928:4203" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="1972:2061" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="2078:2156" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="3047:3131" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="3272:3637" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="3429:3514" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="3535:3623" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="3831:4138" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4030:4105" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4260:5373" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4429:4499" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4541:4625" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4670:5257" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4804:5005" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="4896:4985" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="5026:5243" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="5122:5202" ph="{...}" />
+            <marker date="1550993062166" expanded="true" signature="5413:5615" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
