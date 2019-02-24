@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using WebApplication.Shared;
 
 namespace WebApplication.Models
@@ -41,6 +44,34 @@ namespace WebApplication.Models
                 video.WatchedCount = video.WatchedCount + 1;
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public Task<string> ExportDatabase()
+        {
+            return Task.Run(() =>
+            {
+                var items = _context
+                    .Videos
+                    //.Include(v=>v.Album)
+                    .Include(v => v.VideoTags)
+                    .ThenInclude(v => v.Tag);
+
+                foreach (var item in items)
+                {
+                    if(item.VideoTags!=null)
+                   item.Tags= item.VideoTags.Select(i => i.Tag.Name).ToList();
+
+                    item.VideoTags = null;
+                    
+                }
+
+                var value = JsonConvert.SerializeObject(items);
+                var dst = Path.Combine(Directory.GetCurrentDirectory(),
+                    "database" + DateTime.Now.ToString("-yyyy-MM-dd") + ".json");
+
+                File.WriteAllText(dst, value, new UTF8Encoding());
+                return dst;
+            });
         }
 
         public async Task<int> Like(long id)

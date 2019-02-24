@@ -14,6 +14,7 @@ namespace WebApplication.Models
         Task<int> CreateVideo(Video video);
         Video GetVideo(long id);
         Task IncreaseWatchTimes(long id);
+        Task<string> ExportDatabase();
         IEnumerable<Video> GetLastVideos(int limit = 10);
         Task<int> UpdateVideo(Video changed, Video original = null);
     }

@@ -19,6 +19,7 @@
           <e p="ResultsController.cs" t="Include" />
           <e p="VideoController.cs" t="Include" />
         </e>
+        <e p="database-2019-02-24.json" t="Include" />
         <e p="Migrations" t="Include">
           <e p="20190223095356_Initial.cs" t="Include" />
           <e p="20190223095356_Initial.Designer.cs" t="Include" />
@@ -139,6 +140,7 @@
             <e p="input.png" t="Include" />
           </e>
           <e p="www" t="Include">
+            <e p="aaencode.html" t="Include" />
             <e p="index.html" t="Include" />
             <e p="page.html" t="Include" />
             <e p="src" t="Include">

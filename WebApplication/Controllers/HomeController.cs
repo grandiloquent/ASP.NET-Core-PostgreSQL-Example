@@ -93,6 +93,17 @@ namespace WebApplication.Controllers
             return Content("Success. Operation: " + result);
         }
 
+
+        [HttpPost]
+        [Route("api/export")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Export()
+        {
+            var dst = await _repository.ExportDatabase();
+
+            return Content(dst);
+        }
+
         [HttpPost]
         [Route("api/increase/{id?}")]
         [AllowAnonymous]
